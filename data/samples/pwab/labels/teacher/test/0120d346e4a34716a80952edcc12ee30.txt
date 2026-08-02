@@ -1,0 +1,31 @@
+
+=== INPUT ===
+- User Persona: Gender: Male, Age: 35-44, Occupation: Self-employed, Price Sensitivity: Medium, Shopping Interest: Health and wellness, outdoor gear, home essentials, tech gadgets, Brand Preference: Spoonk, adidas, Krinos, LifePro, Halsa, TP-Link, E EGOOZ, Hallmark, THE NORTH FACE, Thule, Spigen, VRS DESIGN, Oarkive, RYB HOME, Hanes, Amazon Basics, Apple, Garden of Life, Forge, OXO, FGO, B BANGKOK PANTS, Sanuk, KOS, Benicci, Diversity Preference: Medium, Interaction Complexity: Medium, Tone and Style: Enthusiastic, supportive, practical, Item Reference: Specific products and brands mentioned in reviews, Focus Aspect: Quality, functionality, brand reputation
+- Query: Hey there! I'm looking for a durable, waterproof tablecloth for outdoor gatherings. Something square, easy to clean, and from a reputable brand. Any suggestions?
+- Product: title: RYB HOME White Tablecloth for Buffet - Waterproof Table Cloth Indoor Outdoor Use for Wedding Decorations Holiday Dinner Reception Table, 60 x 60, White, price: 12.95, average_rating: 4.5, categories: ['Home & Kitchen', 'Kitchen & Dining', 'Kitchen & Table Linens', 'Tablecloths'], store: RYB HOME, review: {'rating': 5.0, 'title': 'Great table cloth', 'text': 'My wife purchased this for our new dining room table and she absolutely loves it. We have 2 teenage sons that still eat like they are 5 and this table cloth has been washed many times. It has not faded or shrunk and hang dries in about an hour. It hold up to its stain resistance and water repellent.'}
+
+
+=== GPT OUTPUT ===
+{
+  "user_aspects": [
+    {"name": "goal_intent", "value": "Find a durable, waterproof, square outdoor tablecloth from a reputable brand.", "justification": "Query states: durable, waterproof tablecloth for outdoor gatherings; something square, easy to clean, and from a reputable brand."},
+    {"name": "preference_profile", "value": "Quality-focused, brand reputation-conscious; prefers square, outdoor-appropriate linens; brand list indicates broad brand literacy.", "justification": "Persona focus: Quality, functionality, brand reputation; Brand Preference includes RYB HOME, THE NORTH FACE, Apple, etc."},
+    {"name": "need_state", "value": "Needs low-maintenance, easy-to-clean outdoor tablecloth for gatherings.", "justification": "Query includes 'easy to clean' and 'outdoor gatherings'."},
+    {"name": "constraint_indicator", "value": "Medium price sensitivity", "justification": "Price Sensitivity: Medium in persona."},
+    {"name": "task_structure", "value": "Seeking recommendations for outdoor tablecloth options.", "justification": "Query ends with 'Any suggestions?'>"},
+    {"name": "contextual_signal", "value": "Enthusiastic, supportive, and practical approach; values quality and brand reputation.", "justification": "Tone and Style: Enthusiastic, supportive, practical; Focus Aspect: quality, functionality, brand reputation."},
+    {"name": "alignment_expectation", "value": "Expect recommendations from reputable brands with emphasis on quality and durability.", "justification": "Query requests a 'reputable brand' and persona focus on quality."},
+    {"name": "purchase_intent_strength", "value": "Ambiguous/low purchase intent; seeking suggestions rather than committing to purchase.", "justification": "Query asks for suggestions, not a purchase."}
+  ],
+  "solution_aspects": [
+    {"name": "product_features", "value": "Waterproof; stain resistant; water-repellent; indoor/outdoor use; size 60 x 60; white; brand RYB HOME", "justification": "Product title indicates tablecloth for indoor/outdoor use, 60x60; color white; price 12.95; review mentions stain resistance and water repellence."},
+    {"name": "suitability_signal", "value": "Suitable for outdoor gatherings and wedding decorations; square 60x60 fits the requested use.", "justification": "Product description shows Indoor Outdoor Use for Wedding Decorations; review confirms durability."},
+    {"name": "attribute_alignment", "value": "Matches user's square size (60x60), color white, waterproof material; price 12.95; brand RYB HOME.", "justification": "Product features include 60x60, white, waterproof, price 12.95; brand in listing."},
+    {"name": "risk_indicator", "value": "Low risk due to positive rating (4.5) and durability-focused review.", "justification": "Average_rating: 4.5; user review cites stain resistance and water repellence, durability over washing."},
+    {"name": "category_semantics", "value": "Categories: Home & Kitchen > Kitchen & Dining > Kitchen & Table Linens > Tablecloths", "justification": "Categories field lists these categories."},
+    {"name": "utility_dimension", "value": "Durability and maintenance emphasis (washable, stain-resistant, water-repellent) and ease of care.", "justification": "Review mentions washability, hang dry; stain resistance and water repellence."},
+    {"name": "price_signal", "value": "12.95", "justification": "Price listed as 12.95."},
+    {"name": "brand_alignment", "value": "RYB HOME aligns with the user's brand preference list.", "justification": "Brand RYB HOME appears in persona's Brand Preference."},
+    {"name": "recommendation_rationale", "value": "Waterproof and outdoor-friendly with square 60x60 size; positive reviews and reasonable price support recommendation.", "justification": "Product features show waterproof/outdoor use; review is positive; price is affordable."}
+  ]
+}

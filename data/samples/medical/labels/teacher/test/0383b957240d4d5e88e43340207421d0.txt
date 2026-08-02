@@ -1,0 +1,108 @@
+
+=== INPUT ===
+Utterances: patient: my 19 year old son was diagnosed with pneumonia 5 months ago and was given antibiotics but with minimal results. unfortunately he still suffers from the same symptoms but since he is in the military he refuses to go back to the doctor for fear of reprisal. his cough is still deep and his energy is low. are there any long term repercussions for his lungs if he continues without treatment.
+doctor: hello, as you explain the situation i strongly recommend you to send him to the doctor for a re-evaluation of the situation. hope i have answered your query. let me know if i can assist you further. regards, dr. jnikolla, pulmonologist
+
+
+=== GPT OUTPUT ===
+{
+  "user_aspects": [
+    {
+      "name": "clinical_goal_intent",
+      "value": "prognosis regarding long-term lung consequences and care guidance",
+      "justification": "Query: 'are there any long term repercussions for his lungs if he continues without treatment'"
+    },
+    {
+      "name": "explicit_symptom",
+      "value": "persistent deep cough; low energy; prior pneumonia diagnosed 5 months ago with antibiotics given",
+      "justification": "Text: 'diagnosed with pneumonia 5 months ago and was given antibiotics but with minimal results. unfortunately he still suffers from the same symptoms but ... his cough is still deep and his energy is low.'"
+    },
+    {
+      "name": "latent_symptom_pattern",
+      "value": "chronic unresolved respiratory symptoms following pneumonia",
+      "justification": "Duration with ongoing symptoms: '5 months ago' and 'he still suffers from the same symptoms' plus 'his cough is still deep and his energy is low.'"
+    },
+    {
+      "name": "disease_specific_indicator",
+      "value": "post-pneumonia respiratory involvement",
+      "justification": "History of pneumonia with ongoing cough and low energy indicates respiratory involvement beyond acute infection."
+    },
+    {
+      "name": "multisystem_interaction",
+      "value": "not stated",
+      "justification": "No explicit multisystem interactions described in the query."
+    },
+    {
+      "name": "risk_indicator",
+      "value": "potential worsened outcome due to delayed care",
+      "justification": "Constraint: 'military he refuses to go back to the doctor for fear of reprisal' implies care avoidance that could worsen outcomes."
+    },
+    {
+      "name": "constraint_indicator",
+      "value": "care access barrier in military setting",
+      "justification": "Text: 'refuses to go back to the doctor for fear of reprisal' indicates an access/participation constraint."
+    },
+    {
+      "name": "missing_information",
+      "value": "no imaging, vitals, labs, vaccination status, or detailed treatment history provided",
+      "justification": "The query does not include details on imaging results, vital signs, oxygenation, labs, vaccination status, smoking, or specifics of antibiotic therapy."
+    },
+    {
+      "name": "emotional_state",
+      "value": "concern/anxiety about health outcomes and care barriers",
+      "justification": "Expresses worry about long-term lung repercussions and mentions fear of reprisal as a barrier to care."
+    },
+    {
+      "name": "task_structure",
+      "value": "seek prognosis and management guidance",
+      "justification": "The user asks about long-term repercussions if untreated, implying a request for prognosis and next steps."
+    },
+    {
+      "name": "treatment_history_signal",
+      "value": "antibiotics given with minimal response",
+      "justification": "Statement: 'diagnosed with pneumonia 5 months ago and was given antibiotics but with minimal results.'"
+    }
+  ],
+  "solution_aspects": [
+    {
+      "name": "medical_reasoning_pattern",
+      "value": "recommendation for re-evaluation to reassess ongoing symptoms",
+      "justification": "Doctor response: 'i strongly recommend you to send him to the doctor for a re-evaluation of the situation.'"
+    },
+    {
+      "name": "explicit_guidance",
+      "value": "re-evaluate the patient; seek in-person assessment",
+      "justification": "Direct instruction: 'send him to the doctor for a re-evaluation of the situation.'"
+    },
+    {
+      "name": "treatment_guidance",
+      "value": "no specific treatment plan provided; referral for evaluation only",
+      "justification": "Response focuses on referral for re-evaluation with no actionable treatment steps."
+    },
+    {
+      "name": "information_gap_response",
+      "value": "addresses lack of information by directing to re-evaluation",
+      "justification": "Guidance to pursue re-evaluation to clarify diagnosis and management."
+    },
+    {
+      "name": "uncertainty_handling",
+      "value": "not explicitly addressed",
+      "justification": "No discussion of probabilities or ranges of uncertainty in the reply."
+    },
+    {
+      "name": "reassurance_strategy",
+      "value": "basic courtesy with call for further assistance",
+      "justification": "Phrasing: 'hope i have answered your query. let me know if i can assist you further.'"
+    },
+    {
+      "name": "safety_statement",
+      "value": "not present",
+      "justification": "No explicit safety guidance or risk mitigation advice given."
+    },
+    {
+      "name": "guideline_alignment",
+      "value": "general referral; no explicit guideline-based recommendations",
+      "justification": "Response lacks guideline-specific management details; it only advises re-evaluation."
+    }
+  ]
+}

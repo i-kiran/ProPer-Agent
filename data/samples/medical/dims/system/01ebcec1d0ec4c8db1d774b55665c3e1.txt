@@ -1,0 +1,19 @@
+{
+  "system_explicit_dimensions": [
+    {
+      "name": "Prioritizing Isolation Precautions",
+      "value": "stay at home, isolate yourself from others, and get in touch with your healthcare provider.",
+      "justification": "This dimension highlights the importance of isolation to prevent transmission and maintain public health."
+    },
+    {
+      "name": "Structuring Next Steps",
+      "value": "call your doctor or visit an urgent care center if you experience any of these symptoms.",
+      "justification": "The doctor clearly outlines the next course of action for the patient in case they develop symptoms."
+    },
+    {
+      "name": "Reiterating Public Health Guidance",
+      "value": "keep following all precautions and guidelines given by health authorities.",
+      "justification": "The doctor reinforces adherence to public health guidelines to ensure continued compliance and community protection."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "system_explicit_dimensions": [
+    {
+      "name": "Establishes Contextual Framework",
+      "value": "my son is not only refusing to see a doctor, but has actually stopped going to work due to lack of energy.",
+      "justification": "The doctor acknowledges the extent of the situation, highlighting the impact on daily life and work performance."
+    },
+    {
+      "name": "Expresses Empathy and Reassurance",
+      "value": "i completely agree with you",
+      "justification": "The doctor shows understanding and concurrence, creating a sense of shared perspective and empathetic connection."
+    },
+    {
+      "name": "Intervenes and Takes Action",
+      "value": "i think i will have to intervene and insist that he goes to see a doctor",
+      "justification": "The doctor takes responsibility for addressing the issue, committing to take proactive measures to ensure medical attention is sought."
+    },
+    {
+      "name": "Acknowledges Patient Concerns",
+      "value": "he just wants to stay home and rest",
+      "justification": "The doctor recognizes and validates the patient's desire to avoid further medical intervention, showing willingness to consider his feelings."
+    },
+    {
+      "name": "Closes Interaction and Shows Appreciation",
+      "value": "thank you so much!",
+      "justification": "The doctor wraps up the conversation, expressing gratitude and appreciation for the patient's input, indicating a positive closing tone."
+    }
+  ]
+}

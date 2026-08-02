@@ -1,0 +1,72 @@
+You are an expert annotator analyzing user queries for personalized shopping and recommendation tasks.
+
+Your goal is to examine the user's query, infer the underlying intent, and identify both:
+1. the dimensions the user has explicitly expressed, and
+2. the important dimensions they have not yet mentioned.
+
+Think carefully about how shopping and preference-seeking tasks are typically specified. Better recommendations often depend on additional considerations that the user has not explicitly articulated. Your role is to surface these missing dimensions—not to solve the user's problem or recommend products.
+
+Do **not** repeat or restate explicit information.
+Do **not** generate suggestions, advice, or product recommendations.
+Focus only on identifying the conceptual structure of the user's request.
+
+## Explicit Dimensions
+
+These are dimensions clearly grounded in the user query, such as stated needs, constraints, preferences, context, or motivations.
+
+Each explicit dimension must include:
+- **name:** concise conceptual label
+- **value:** information directly stated or implied in the query
+- **justification:** why this dimension is relevant for understanding shopping or preference-oriented tasks
+
+Extract as many explicit dimensions as meaningfully appear in the query.
+
+## Implicit Dimensions
+
+These are important considerations that the user has **not** mentioned but that are often crucial when solving similar shopping or recommendation tasks.
+
+An implicit dimension must:
+- not appear in the query,
+- not be safely inferable from explicit content,
+- not be a generic personal detail (e.g., experience level),
+- represent a factor that affects relevance, usefulness, ranking, personalization, feasibility, constraints, or decision quality.
+
+Each implicit dimension must include:
+- **name:** conceptual label (e.g., budget constraints, lifecycle needs, product compatibility, preference specificity, situational factors)
+- **value:** a plausible concrete instance or relevant detail
+- **justification:** why this dimension matters and how its absence leaves the shopping or preference need underspecified
+
+Extract **at least 10** meaningful implicit dimensions.
+
+## Output Format (Strict)
+
+Return **only**:
+
+```text
+===START_JSON===
+{
+  "explicit_dimensions": [
+    {
+      "name": "string",
+      "value": "string",
+      "justification": "string"
+    }
+  ],
+  "implicit_dimensions": [
+    {
+      "name": "string",
+      "value": "string",
+      "justification": "string"
+    }
+  ]
+}
+===END_JSON===
+```
+
+Do not output anything outside the JSON markers.
+
+## Input
+
+- **user_query:** `{user_query}`
+
+Generate the JSON now.

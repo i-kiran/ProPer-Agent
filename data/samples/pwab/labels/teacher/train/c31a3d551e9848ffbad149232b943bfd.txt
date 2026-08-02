@@ -1,0 +1,99 @@
+
+=== INPUT ===
+- User Persona: Gender: Female, Age: 35-44, Occupation: Writer, Price Sensitivity: Medium, Shopping Interest: Electronics, Home & Kitchen, Fashion, Health & Beauty, Brand Preference: Aibocn, DACHEE, IBENZER, Columbia, Nutrition Essentials, Stauffers, KitchenAid, Fossil, ILIFE, simplehuman, Utopia Bedding, HC COLLECTION, Linenspa, CINEYO, DearMy, Basic Brands, Roku, Anne Klein, Hanes, ZESICA, Madison Park, Diversity Preference: High, Interaction Complexity: High, Tone and Style: Enthusiastic, Detailed, Positive, Item Reference: Specific products and brands mentioned frequently, Focus Aspect: Quality, Brand, Price
+- Query: Hey there! I'm super excited to find some high-quality replacement parts for my robotic vacuum cleaner. Looking for a reputable brand with great filters and brushes that'll keep my floors sparkling clean. Any awesome recommendations around $20?
+- Product: title: Electropan Replacement Vacuum Filter Brush Kit for Robotic Vacuum ILIFE V3, V3s, V3s pro, V5, V5s, V5s pro ILIFE Robot Vacuum Replacement Parts Ilife Vacuum Filters V3s, price: 18.0, average_rating: 4.3, categories: ['Home & Kitchen', 'Vacuums & Floor Care', 'Vacuum Parts & Accessories', 'Attachments & Brushes', 'Attachments'], store: Electropan, review: {'rating': 5.0, 'title': 'Great', 'text': 'Easy to replace And they fit.'}
+
+
+=== GPT OUTPUT ===
+{
+  "user_aspects": [
+    {
+      "name": "goal_intent",
+      "value": "Acquire replacement parts for robotic vacuum; seek recommendations",
+      "justification": "Query: 'replacement parts for my robotic vacuum cleaner' and 'Any awesome recommendations around $20?'"
+    },
+    {
+      "name": "preference_profile",
+      "value": "Prioritizes reputable brands with high-quality filters/brushes; ILIFE-compatible parts; focuses on quality, brand, price",
+      "justification": "Brand Preference includes ILIFE; Focus Aspect: Quality, Brand, Price; user seeks a 'reputable brand with great filters and brushes'"
+    },
+    {
+      "name": "need_state",
+      "value": "Excited and positive about finding high-quality parts",
+      "justification": "Query starts with 'super excited' and persona tone is 'Enthusiastic, Detailed, Positive'"
+    },
+    {
+      "name": "constraint_indicator",
+      "value": "Budget around $20",
+      "justification": "Query states 'around $20'"
+    },
+    {
+      "name": "task_structure",
+      "value": "Shopping for replacement parts; evaluating options within budget",
+      "justification": "Query requests recommendations; product is a replacement-part option; budget constraint implied by $20 target"
+    },
+    {
+      "name": "contextual_signal",
+      "value": "High brand diversity interest; ILIFE familiarity; high interaction complexity; emphasis on quality/brand/price",
+      "justification": "Diversity Preference: High; Interaction Complexity: High; Focus Aspect: Quality, Brand, Price; Item Reference: Specific brands mentioned frequently; Brand ILIFE appears in persona"
+    },
+    {
+      "name": "alignment_expectation",
+      "value": "Quality-focused, reputable brand; cost-effective; compatible with ILIFE",
+      "justification": "Persona focus on Quality, Brand, Price and product is ILIFE-compatible"
+    },
+    {
+      "name": "purchase_intent_strength",
+      "value": "Moderate to high purchase intent within budget",
+      "justification": "Interest in recommendations around $20 implies potential purchase; 'super excited' adds positive intent"
+    }
+  ],
+  "solution_aspects": [
+    {
+      "name": "product_features",
+      "value": "Electropan Replacement Vacuum Filter Brush Kit for Robotic Vacuum ILIFE V3, V3s, V3s pro, V5, V5s, V5s pro ILIFE Robot Vacuum Replacement Parts Ilife Vacuum Filters V3s",
+      "justification": "Product title explicitly lists the kit for ILIFE models V3, V3s, V3s pro, V5, V5s, V5s pro"
+    },
+    {
+      "name": "suitability_signal",
+      "value": "Compatible with ILIFE V3, V3s, V3s pro, V5, V5s, V5s pro",
+      "justification": "Product title includes 'ILIFE V3, V3s, V3s pro, V5, V5s, V5s pro'"
+    },
+    {
+      "name": "attribute_alignment",
+      "value": "Replacement parts (filters/brushes) for ILIFE robotic vacuums; categorized under Vacuum Parts & Accessories, Attachments & Brushes",
+      "justification": "Product is a 'Replacement Vacuum Filter Brush Kit' and listed under 'Vacuum Parts & Accessories', 'Attachments & Brushes'"
+    },
+    {
+      "name": "risk_indicator",
+      "value": "Low risk based on rating and positive feedback",
+      "justification": "Average_rating: 4.3; Review: 'Great' and 'Easy to replace And they fit.'"
+    },
+    {
+      "name": "category_semantics",
+      "value": "Home & Kitchen > Vacuums & Floor Care > Vacuum Parts & Accessories > Attachments & Brushes > Attachments",
+      "justification": "Categories: ['Home & Kitchen', 'Vacuums & Floor Care', 'Vacuum Parts & Accessories', 'Attachments & Brushes', 'Attachments']"
+    },
+    {
+      "name": "utility_dimension",
+      "value": "Budget-friendly replacement part (~$18) with solid value",
+      "justification": "Price: 18.0; user target around $20; product positioned as affordable replacement part"
+    },
+    {
+      "name": "price_signal",
+      "value": "18.0",
+      "justification": "Product price is 18.0"
+    },
+    {
+      "name": "brand_alignment",
+      "value": "Brand Electropan; ILIFE compatibility; aligns with user preference for ILIFE-compatible parts",
+      "justification": "Product brand: Electropan; ILIFE compatibility indicated in title; user preference includes ILIFE"
+    },
+    {
+      "name": "recommendation_rationale",
+      "value": "Fits ILIFE models; affordable price; positive reviews; credible replacement-part option by Electropan",
+      "justification": "ILIFE compatibility shown in title; rating and review quotes; price point aligns with budget"
+    }
+  ]
+}

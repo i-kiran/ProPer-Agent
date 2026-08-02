@@ -1,0 +1,42 @@
+
+=== INPUT ===
+Utterances: patient: if everyone is running low on facemasks, what else can i use to protect myself from the coronavirus?
+doctor: they don't . unless you are using high end medical or industrial masks they do not protect you from any such virus. they prevent your cough or expired air from infecting others. any scarf/fabric homemade mask or similar device will do the same. you protect yourself more by washing your hands often & not touching your face/mouth/nose with contaminated fingers.
+
+
+=== GPT OUTPUT ===
+{
+  "user_aspects": [
+    {"name": "clinical_goal_intent", "value": "Seek alternative protective measures due to mask shortage", "justification": "Query asks for other options to protect oneself from coronavirus when facemasks are scarce: 'if everyone is running low on facemasks, what else can i use to protect myself'."},
+    {"name": "explicit_symptom", "value": "none", "justification": "No symptoms are described in the user statement."},
+    {"name": "explicit_history", "value": "none", "justification": "No medical history or prior conditions provided."},
+    {"name": "latent_symptom_pattern", "value": "null", "justification": "No symptom patterns or disease clusters are inferable from the query."},
+    {"name": "disease_specific_indicator", "value": "null", "justification": "No organ/system-specific symptoms mentioned."},
+    {"name": "multisystem_interaction", "value": "null", "justification": "No multisystem concerns mentioned."},
+    {"name": "risk_indicator", "value": "shortage-related risk", "justification": "Mention of facemask scarcity indicates risk/constraint affecting protection strategy."},
+    {"name": "constraint_indicator", "value": "mask availability constraint", "justification": "Explicit phrase: 'everyone is running low on facemasks'."},
+    {"name": "missing_information", "value": "null", "justification": "No further patient history, exposure, or comorbidity details provided."},
+    {"name": "emotional_state", "value": "concern/anxiety about protection", "justification": "User asks for alternatives due to shortage, implying concern about personal protection."},
+    {"name": "task_structure", "value": "requesting protective strategies/alternatives", "justification": "Question seeks non-mask protective options."},
+    {"name": "treatment_history_signal", "value": "null", "justification": "No treatment or past medical therapy information provided."}
+  ],
+  "solution_aspects": [
+    {"name": "medical_reasoning_pattern", "value": "Masks are primarily for source control and wearer's protection is limited unless high-end masks; emphasis on hand hygiene", "justification": "Doctor states: 'they don't ... they do not protect you from any such virus. they prevent your cough or expired air from infecting others. ... any scarf/fabric homemade mask ... will do the same. you protect yourself more by washing your hands often & not touching your face...'"},
+
+    {"name": "explicit_guidance", "value": "Fabric masks offer no extra protection; prioritize hand hygiene and minimizing face-touch", "justification": "Explicit statements about mask effectiveness and recommended practices."},
+
+    {"name": "safety_statement", "value": "Standard masks do not protect the wearer from viruses; masks mainly limit spread; hand hygiene emphasized", "justification": "Direct sentences about mask protection and source control."},
+
+    {"name": "risk_assessment", "value": "Low wearer protection from common masks; other measures more protective", "justification": "Conclusion that scarves/fabric masks 'will do the same' and hand washing is more protective."},
+
+    {"name": "uncertainty_handling", "value": "low", "justification": "Statements are definitive ('they don't' 'will do the same') without hedging."},
+
+    {"name": "information_gap_response", "value": "null", "justification": "Response provides general advice; no tailoring to user’s specific exposure."},
+
+    {"name": "reassurance_strategy", "value": "clarification of misconceptions without reassurance", "justification": "Adjusting user expectations about mask effectiveness."},
+
+    {"name": "guideline_alignment", "value": "null", "justification": "No reference to clinical guidelines."},
+
+    {"name": "correctness_risk", "value": "potential misinterpretation risk", "justification": "Claim that masks do not protect wearer from viruses could be contested; no citations; not evidenced."}
+  ]
+}

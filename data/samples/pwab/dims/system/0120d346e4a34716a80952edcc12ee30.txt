@@ -1,0 +1,59 @@
+{
+  "system_explicit_dimensions": [
+    {
+      "name": "Interprets preferences as durability + water resistance",
+      "value": "durable, waterproof tablecloth",
+      "justification": "The assistant explicitly extracts 'durable' and 'waterproof' as essential features."
+    },
+    {
+      "name": "Restates shape requirement",
+      "value": "square",
+      "justification": "The assistant reiterates'something square' as a constraint."
+    },
+    {
+      "name": "Highlights ease of cleaning",
+      "value": "easy to clean",
+      "justification": "The assistant emphasizes 'easy to clean' as an attribute."
+    },
+    {
+      "name": "Identifies brand reputation as important",
+      "value": "from a reputable brand",
+      "justification": "The assistant includes'reputable brand' as a consideration."
+    },
+    {
+      "name": "Frames options in terms of event settings",
+      "value": "Picnic, BBQ, Patio Party, Backyard Event",
+      "justification": "The assistant uses event scenarios to contextualize the product's suitability."
+    },
+    {
+      "name": "Provides a single product suggestion",
+      "value": "WUOYA Outdoor Waterproof Square Tablecloth",
+      "justification": "The assistant offers a specific product recommendation."
+    },
+    {
+      "name": "Notes price absence",
+      "value": "price: None",
+      "justification": "The assistant indicates that pricing information is unavailable."
+    },
+    {
+      "name": "Reports average rating",
+      "value": "average_rating: 4.3",
+      "justification": "The assistant shares the average rating for the product."
+    },
+    {
+      "name": "Lists product categories",
+      "value": "'Home & Kitchen', 'Kitchen & Dining', 'Dining & Entertaining', 'Tablecloths'",
+      "justification": "The assistant lists the product categories under which it falls."
+    },
+    {
+      "name": "Cites store origin",
+      "value": "store: WUOYA",
+      "justification": "The assistant identifies the store where the product originates."
+    },
+    {
+      "name": "Quotes customer feedback",
+      "value": "review: {'rating': 5.0, 'title': 'Nice tablecloth.', 'text': 'I was using this for a picnic in the park. It was perfect.'}",
+      "justification": "The assistant provides a customer testimonial ('review') about the product."
+    }
+  ]
+}

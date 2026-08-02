@@ -1,0 +1,99 @@
+
+=== INPUT ===
+- User Persona: Gender: Female, Age: 35-44, Occupation: Writer, Price Sensitivity: Medium, Shopping Interest: Electronics, Home & Kitchen, Fashion, Health & Beauty, Brand Preference: Aibocn, DACHEE, IBENZER, Columbia, Nutrition Essentials, Stauffers, KitchenAid, Fossil, ILIFE, simplehuman, Utopia Bedding, HC COLLECTION, Linenspa, CINEYO, DearMy, Basic Brands, Roku, Anne Klein, Hanes, ZESICA, Madison Park, Diversity Preference: High, Interaction Complexity: High, Tone and Style: Enthusiastic, Detailed, Positive, Item Reference: Specific products and brands mentioned frequently, Focus Aspect: Quality, Brand, Price
+- Query: Hey there! I'm on the hunt for a stunning women's watch with crystal accents and a mesh bracelet. Looking for something elegant yet affordable from a reputable brand. Any recommendations for a versatile timepiece that'll add some sparkle to my outfits? Thanks!
+- Product: title: Anne Klein Women's Premium Crystal Accented Mesh Bracelet Watch, price: 57.9, average_rating: 4.6, categories: ['Clothing, Shoes & Jewelry', 'Women', 'Watches', 'Wrist Watches'], store: Anne Klein, review: {'rating': 5.0, 'title': 'Love this watch !', 'text': 'Beautiful on the wrist and looks so expensive but Not.'}
+
+
+=== GPT OUTPUT ===
+{
+  "user_aspects": [
+    {
+      "name": "goal_intent",
+      "value": "Seek recommendations for an elegant, affordable women's watch.",
+      "justification": "\"hunt for a stunning women's watch with crystal accents and a mesh bracelet. Looking for something elegant yet affordable from a reputable brand. Any recommendations for a versatile timepiece that'll add some sparkle\""
+    },
+    {
+      "name": "preference_profile",
+      "value": "Brand-conscious, favors reputable brands with clear quality/price signals; has Anne Klein among preferred brands.",
+      "justification": "\"Brand Preference: Aibocn, DACHEE, IBENZER, Columbia, Nutrition Essentials, Stauffers, KitchenAid, Fossil, ILIFE, simplehuman, Utopia Bedding, HC COLLECTION, Linenspa, CINEYO, DearMy, Basic Brands, Roku, Anne Klein, Hanes, ZESICA, Madison Park\" and \"Focus Aspect: Quality, Brand, Price\""
+    },
+    {
+      "name": "need_state",
+      "value": "Desires sparkle (crystal accents) and versatility in wear; values elegance within a budget.",
+      "justification": "\"crystal accents and a mesh bracelet\" + \"elegant yet affordable\""
+    },
+    {
+      "name": "constraint_indicator",
+      "value": "Moderate budget sensitivity; explicitly seeks affordability.",
+      "justification": "\"Price Sensitivity: Medium\" and \"affordable\""
+    },
+    {
+      "name": "task_structure",
+      "value": "Exploring options and requesting recommendations for a purchase.",
+      "justification": "\"Any recommendations\" for a versatile timepiece\""
+    },
+    {
+      "name": "contextual_signal",
+      "value": "Enthusiastic, detailed shopper; expects quality and brand signals; frequent reference to specific brands.",
+      "justification": "\"Tone and Style: Enthusiastic, Detailed, Positive\" and explicit brand mentions in the persona."
+    },
+    {
+      "name": "alignment_expectation",
+      "value": "Recommendation should align with reputable brands, perceived quality, and reasonable price.",
+      "justification": "\"reputable brand\" and brand list including Anne Klein"
+    },
+    {
+      "name": "purchase_intent_strength",
+      "value": "Moderate purchase intent; actively evaluating options without a firm commitment yet.",
+      "justification": "\"hunt for\" and request for recommendations imply consideration rather than committed purchase"
+    }
+  ],
+  "solution_aspects": [
+    {
+      "name": "product_features",
+      "value": "Crystal accents; mesh bracelet; women's wristwatch; brand Anne Klein; price 57.9; store Anne Klein; categories include Watches.",
+      "justification": "\"title: Anne Klein Women's Premium Crystal Accented Mesh Bracelet Watch, price: 57.9, categories: ['Clothing, Shoes & Jewelry', 'Women', 'Watches', 'Wrist Watches'], store: Anne Klein\""
+    },
+    {
+      "name": "suitability_signal",
+      "value": "High alignment with user request for crystal accents and mesh bracelet; affordable option from a reputable brand.",
+      "justification": "\"Crystal Accented Mesh Bracelet\" and user desire for \"elegant yet affordable from a reputable brand\""
+    },
+    {
+      "name": "attribute_alignment",
+      "value": "Brand alignment: Anne Klein is on the user’s preferred-brand list; product is Anne Klein.",
+      "justification": "\"Brand Preference: ... Anne Klein\" and \"store: Anne Klein\""
+    },
+    {
+      "name": "risk_indicator",
+      "value": "Low risk due to strong rating and positive sentiment in review.",
+      "justification": "\"average_rating: 4.6\" and \"Love this watch ! ... Beautiful on the wrist and looks so expensive but Not\""
+    },
+    {
+      "name": "category_semantics",
+      "value": "Category: Clothing, Shoes & Jewelry > Watches > Wrist Watches.",
+      "justification": "\"categories: ['Clothing, Shoes & Jewelry', 'Women', 'Watches', 'Wrist Watches']\""
+    },
+    {
+      "name": "utility_dimension",
+      "value": "Functional value as a versatile timepiece; fashion-forward accessory with crystal accents and mesh bracelet.",
+      "justification": "\"versatile timepiece\" and product description features"
+    },
+    {
+      "name": "price_signal",
+      "value": "Price: 57.9",
+      "justification": "\"price: 57.9\""
+    },
+    {
+      "name": "brand_alignment",
+      "value": "Strong brand alignment with user preferences; Anne Klein is explicitly preferred.",
+      "justification": "\"Brand Preference\" includes Anne Klein"
+    },
+    {
+      "name": "recommendation_rationale",
+      "value": "Directly matches requested features (crystal accents, mesh bracelet) from a reputable brand at an accessible price; supported by positive rating.",
+      "justification": "\"Crystal Accented Mesh Bracelet Watch\" with positive rating and affordable price addresses user criteria."
+    }
+  ]
+}

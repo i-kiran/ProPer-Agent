@@ -1,0 +1,33 @@
+# medical domain. Paths are relative to the repository root.
+#
+# `data_root` points at the bundled samples so every stage runs out of the box.
+# Switch it to data/release/medical after `bash data/download.sh`.
+domain: medical
+data_root: data/samples/medical
+prompt_dir: prompts
+
+models:
+  # LoRA adapters from src/train/train.sh, or `bash data/download.sh
+  # --with-models medical` (one Hub repo, one subfolder per agent).
+  # Applied to `base` and merged in memory at load time; a standalone
+  # merged checkpoint also works here.
+  base: meta-llama/Meta-Llama-3-8B-Instruct
+  rga: saves/medical/rga
+  dga: saves/medical/dga
+  embedder: BAAI/bge-large-en-v1.5
+
+gpt:
+  # Teacher (src/data/label_gpt.py) and judge (src/eval/judge.py).
+  # Credentials come from OPENAI_API_KEY; endpoint from OPENAI_BASE_URL.
+  model: gpt-5-nano
+
+ranker:
+  lambda1: 8      # suppress dimensions the base response already covered
+  lambda2: 1      # suppress near-duplicate dimensions
+  top_k: 3
+  min_ratio: 0.7  # token-window match threshold for per-dimension logprobs
+
+generation:
+  rga_base_max_new_tokens: 512
+  dga_max_new_tokens: 1600
+  rewrite_max_new_tokens: 768

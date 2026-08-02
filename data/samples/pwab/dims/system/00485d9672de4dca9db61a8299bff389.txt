@@ -1,0 +1,39 @@
+{
+  "system_explicit_dimensions": [
+    {
+      "name": "Product_attribute_restatement",
+      "value": "Miss Vickie's Jalapeño & Cheddar Flavored Potato Chips, 7 oz (192g)",
+      "justification": "The assistant explicitly rephrases the product name in response to the user's interest in writing a review."
+    },
+    {
+      "name": "Attribute_surface_crunch",
+      "value": "crunchy",
+      "justification": "The assistant highlights the chip's crunchiness as a notable attribute mentioned in the review."
+    },
+    {
+      "name": "Flavor_description_restatement",
+      "value": "flavorful",
+      "justification": "The assistant reproduces the word 'flavorful' from the existing review content to describe the chip's taste."
+    },
+    {
+      "name": "Comparison_frame",
+      "value": "past snack purchases",
+      "justification": "The assistant introduces a comparison context ('compare to') inviting the user to contrast their current snack choice with past experiences."
+    },
+    {
+      "name": "Rating_reveal",
+      "value": "average_rating: 4.5",
+      "justification": "The assistant provides the overall rating for the product, indicating a positive assessment."
+    },
+    {
+      "name": "Store_label",
+      "value": "store: Miss Vickies",
+      "justification": "The assistant identifies the brand behind the product (Miss Vickies) as part of the product description."
+    },
+    {
+      "name": "Review_quote_integration",
+      "value": "“I love that they are crunchy, but also flavorful.”",
+      "justification": "The assistant incorporates direct quote material from the provided review text within the response."
+    }
+  ]
+}

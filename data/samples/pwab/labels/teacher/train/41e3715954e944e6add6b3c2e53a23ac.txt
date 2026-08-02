@@ -1,0 +1,99 @@
+
+=== INPUT ===
+- User Persona: Gender: Female, Age: 35-44, Occupation: Writer, Price Sensitivity: Medium, Shopping Interest: Electronics, Home & Kitchen, Fashion, Health & Beauty, Brand Preference: Aibocn, DACHEE, IBENZER, Columbia, Nutrition Essentials, Stauffers, KitchenAid, Fossil, ILIFE, simplehuman, Utopia Bedding, HC COLLECTION, Linenspa, CINEYO, DearMy, Basic Brands, Roku, Anne Klein, Hanes, ZESICA, Madison Park, Diversity Preference: High, Interaction Complexity: High, Tone and Style: Enthusiastic, Detailed, Positive, Item Reference: Specific products and brands mentioned frequently, Focus Aspect: Quality, Brand, Price
+- Query: Hey there! I'm super excited to share my thoughts on this Madison Park faux fur throw. It's incredibly soft, but wow, it's heavier than I expected! Could you help me craft a detailed review that captures my mixed feelings? I want to highlight the pros and cons while staying positive and enthusiastic about the overall quality. Thanks!
+- Product: title: Madison Park Ruched Luxury Throw Premium Soft Cozy Brushed Long Faux Fur For Bed, Couch or Sofa, 50"x60", Aqua, price: 31.99, average_rating: 4.6, categories: ['Home & Kitchen', 'Bedding', 'Blankets & Throws', 'Throws'], store: Madison Park, review: {'rating': 4.0, 'title': 'Not as Soft as reviews let me to believe.', 'text': "It just Soft, however it's Heavy!!! A little to heavy for me.  Blanket of steel weight ."}
+
+
+=== GPT OUTPUT ===
+{
+  "user_aspects": [
+    {
+      "name": "goal_intent",
+      "value": "Write a detailed, balanced review highlighting pros and cons with a positive view of overall quality.",
+      "justification": "From query: 'craft a detailed review that captures my mixed feelings' and 'highlight the pros and cons' while 'staying positive and enthusiastic about the overall quality'."
+    },
+    {
+      "name": "preference_profile",
+      "value": "Prefers Madison Park brand; values quality, brand, and price.",
+      "justification": "Persona lists 'Madison Park' among Brand Preference and focuses on 'Quality, Brand, Price'."
+    },
+    {
+      "name": "need_state",
+      "value": "Excited and enthusiastic about discussing the product, with mixed feelings about heaviness/heftiness.",
+      "justification": "Query includes 'I'm super excited' and 'it's incredibly soft, but wow, it's heavier than I expected!'."
+    },
+    {
+      "name": "constraint_indicator",
+      "value": "Medium price sensitivity; seeks good quality within reasonable price.",
+      "justification": "'Price Sensitivity: Medium' and 'Focus Aspect: Quality, Brand, Price' from persona."
+    },
+    {
+      "name": "task_structure",
+      "value": "Review-writing task; producing a detailed review.",
+      "justification": "Query: 'Could you help me craft a detailed review'."
+    },
+    {
+      "name": "contextual_signal",
+      "value": "High diversity of interests and long-term engagement with home decor; frequent reference to specific brands.",
+      "justification": "Diversity Preference: High; Shopping Interest includes Home & Kitchen; Item Reference: Specific products and brands mentioned frequently."
+    },
+    {
+      "name": "alignment_expectation",
+      "value": "Maintain a positive, enthusiastic framing of overall quality while presenting pros and cons.",
+      "justification": "Query requests to 'stay positive and enthusiastic about the overall quality' and to 'highlight the pros and cons'."
+    },
+    {
+      "name": "purchase_intent_strength",
+      "value": "Low/neutral purchase intent; the user asks for review content rather than purchasing.",
+      "justification": "There is no explicit purchase intent; the user asks to 'share my thoughts' and 'craft a detailed review'."
+    }
+  ],
+  "solution_aspects": [
+    {
+      "name": "product_features",
+      "value": "Madison Park Ruched Luxury Throw; faux fur; premium soft; brushed long faux fur; 50\"x60\"; Aqua; for bed, couch or sofa.",
+      "justification": "Product title/description includes 'Madison Park Ruched Luxury Throw Premium Soft Cozy Brushed Long Faux Fur For Bed, Couch or Sofa, 50\"x60\", Aqua' and 'Premium Soft Cozy Brushed Long Faux Fur'."
+    },
+    {
+      "name": "suitability_signal",
+      "value": "The product appears soft but is described as heavy; softness may not meet expectations.",
+      "justification": "User review notes 'Not as Soft as reviews let me to believe' and 'it's Heavy'."
+    },
+    {
+      "name": "attribute_alignment",
+      "value": "Brand Madison Park aligns with user brand preferences; throws category aligns with home decor needs.",
+      "justification": "Brand Madison Park is in the user's preferred-brand list; product category is Throws (Home & Kitchen > Bedding > Blankets & Throws > Throws)."
+    },
+    {
+      "name": "risk_indicator",
+      "value": "Potential heaviness causing discomfort; softness may disappoint relative to expectations; price $31.99.",
+      "justification": "Heaviness is noted; price listed as 31.99; softness discrepancy referenced in reviews."
+    },
+    {
+      "name": "category_semantics",
+      "value": "Home & Kitchen > Bedding > Blankets & Throws > Throws.",
+      "justification": "Categories field includes 'Home & Kitchen', 'Bedding', 'Blankets & Throws', 'Throws'."
+    },
+    {
+      "name": "utility_dimension",
+      "value": "Cozy warmth and decorative appeal; fur aesthetic; ruched design enhancing luxe look.",
+      "justification": "Phrases like 'Ruched Luxury Throw' and 'Premium Soft Cozy Brushed Long Faux Fur' imply coziness and aesthetic."
+    },
+    {
+      "name": "price_signal",
+      "value": "Price is 31.99; appears affordable for a faux fur throw.",
+      "justification": "Product data shows price: 31.99."
+    },
+    {
+      "name": "brand_alignment",
+      "value": "Brand Madison Park matches user brand preferences.",
+      "justification": "User persona includes Madison Park among preferred brands."
+    },
+    {
+      "name": "recommendation_rationale",
+      "value": "Overall positive rating (4.6) supports favorable quality; heaviness/softness caveats noted; price reasonable.",
+      "justification": "Average rating: 4.6; review mentions softness vs. heaviness; price listed."
+    }
+  ]
+}

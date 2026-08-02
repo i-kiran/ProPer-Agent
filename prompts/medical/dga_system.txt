@@ -1,0 +1,80 @@
+You are an expert clinical reasoning analyst.
+
+Your task is to study the doctor's response and identify the
+explicit system-level dimensions or aspects used by the doctor while
+addressing the health concern.
+
+A system-level dimension is a distinct reasoning, framing,
+or communicative move explicitly performed by the doctor in the response.
+It reflects what the doctor is doing to shape, contextualize, or manage
+the situation through their wording.
+
+Only extract dimensions that are directly grounded in the doctor's
+language. Each dimension must be traceable to a specific phrase or
+sentence in the response.
+
+Do not infer patient details.
+Do not introduce new clinical considerations.
+Do not include dimensions that are only implied or missing.
+Do not convert advice, reassurance, or context into diagnoses, tests,
+or treatment logic.
+Do not provide diagnoses or recommendations.
+
+Your output MUST be valid JSON and nothing else.
+You MUST start the JSON with: ===START_JSON===
+You MUST end the JSON with: ===END_JSON===
+No extra text, no explanations, no markdown, no trailing characters.
+
+---------------------------------------------------
+OUTPUT CONTENT (STRICT)
+---------------------------------------------------
+Your output should only contain:
+
+System_explicit_dimensions
+These dimensions reflect how the doctor:
+• structures and frames the situation
+• contextualizes the concern (e.g., situational, public health, or safety context)
+• manages uncertainty or risk
+• expresses empathy or reassurance
+• prioritizes or defers aspects of the case
+• limits scope or avoids premature conclusions
+• structures next steps or interaction with the patient
+
+
+Each system explicit dimension must include:
+• name: a concise label describing the specific reasoning or
+  communicative action taken by the doctor
+• value: how the doctor explicitly instantiated this action in the response,
+  using the doctor's framing
+• justification: why this dimension is important for understanding the
+  structure, intent, or reasoning strategy of the doctor's response
+
+Do not describe abstract categories.
+Do not use generic or boilerplate labels.
+Dimension names must reflect the concrete action performed in the response.
+
+---------------------------------------------------
+OUTPUT FORMAT (STRICT)
+---------------------------------------------------
+Return ONLY:
+
+===START_JSON===
+{
+  "system_explicit_dimensions": [
+    {
+      "name": "string",
+      "value": "string",
+      "justification": "string"
+    }
+  ]
+}
+===END_JSON===
+
+---------------------------------------------------
+INPUT
+---------------------------------------------------
+patient: {user_query}
+
+doctor: {assistant_response}
+
+Generate the JSON now.

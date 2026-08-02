@@ -1,0 +1,98 @@
+
+=== INPUT ===
+Utterances: patient: just found out i was pregnant. yesterday diagnosed with pneumonia. i am a high risk pregnancy. fertility issues, pcos, weak cervix. delivered first daughter at 29 weeks, miscarried, and gave birth at 38 weeks to second daughter, but was on bedrest for weak cervix beginning at 5 months. i m a wreck. when i miscarried they said my progesterone level is low which caused me to miscarry, and gave me progesterone shots every week. can t see doctor for two days.
+doctor: thanks for your question on healthcare magic.i can understand your concern. pneumonia with pregnancy is always critical.antibiotics as early as possible is the treatment of choice for pneumonia. so better to immediately consult doctor and start antibiotics for pneumonia. drink plenty of fluids orally and keep yourself hydrated. with prompt and appropriate treatment, pneumonia can be cured easily. hope i have solved your query. i will be happy to help you further. wish you good health. thanks.
+
+
+=== GPT OUTPUT ===
+{
+  "user_aspects": [
+    {
+      "name": "clinical_goal_intent",
+      "value": "Seek guidance on safe management of pneumonia in pregnancy given high-risk obstetric history.",
+      "justification": "yesterday diagnosed with pneumonia; i am a high risk pregnancy; can't see doctor for two days"
+    },
+    {
+      "name": "explicit_symptom_presentation",
+      "value": "Pneumonia diagnosed yesterday during current pregnancy.",
+      "justification": "yesterday diagnosed with pneumonia"
+    },
+    {
+      "name": "explicit_history_past_pregnancy",
+      "value": "Preterm delivery (29 weeks) of first child; miscarried later; term delivery (38 weeks) of second child with past cervical insufficiency requiring bedrest from 5 months.",
+      "justification": "delivered first daughter at 29 weeks; miscarried; and gave birth at 38 weeks to second daughter, but was on bedrest for weak cervix beginning at 5 months"
+    },
+    {
+      "name": "latent_symptom_pattern",
+      "value": "Obstetric high-risk profile with cervical insufficiency and infertility factors (PCOS) suggesting risk for recurrent obstetric complications.",
+      "justification": "fertility issues, pcos, weak cervix"
+    },
+    {
+      "name": "multisystem_interaction",
+      "value": "Interplay between obstetric history (high-risk pregnancy, cervical insufficiency) and infectious disease (pneumonia) with prior endocrine treatment (progesterone).",
+      "justification": "high-risk pregnancy; pneumonia; low progesterone history; weekly progesterone shots"
+    },
+    {
+      "name": "risk_indicator",
+      "value": "High risk pregnancy with cervical insufficiency and prior preterm birth increases potential for complications from pneumonia during pregnancy.",
+      "justification": "i am a high risk pregnancy; weak cervix; 29 weeks delivery; prior obstetric history"
+    },
+    {
+      "name": "constraint_indicator",
+      "value": "Limited access to in-person medical care for two days.",
+      "justification": "can't see doctor for two days"
+    },
+    {
+      "name": "missing_information_signal",
+      "value": "Gestational age and current pneumonia severity are not specified; no vitals or current medications provided.",
+      "justification": "null"
+    },
+    {
+      "name": "emotional_state",
+      "value": "High anxiety and distress about pregnancy and pneumonia risk.",
+      "justification": "i m a wreck"
+    },
+    {
+      "name": "treatment_history_signal",
+      "value": "Prior progesterone therapy during pregnancy attempts; history of low progesterone associated with miscarriage.",
+      "justification": "low progesterone level which caused me to miscarry, and gave me progesterone shots every week"
+    }
+  ],
+  "solution_aspects": [
+    {
+      "name": "safety_statement",
+      "value": "Pneumonia in pregnancy is considered a high-risk, critical condition requiring urgent treatment.",
+      "justification": "pneumonia with pregnancy is always critical"
+    },
+    {
+      "name": "disease_specific_assessment",
+      "value": "Pneumonia during pregnancy requires prompt antibiotic treatment as the standard of care.",
+      "justification": "antibiotics as early as possible is the treatment of choice for pneumonia"
+    },
+    {
+      "name": "explicit_guidance",
+      "value": "Start antibiotics for pneumonia now.",
+      "justification": "start antibiotics for pneumonia"
+    },
+    {
+      "name": "treatment_guidance",
+      "value": "Antibiotics as early as possible; maintain hydration.",
+      "justification": "antibiotics as early as possible is the treatment of choice for pneumonia; drink plenty of fluids orally and keep yourself hydrated"
+    },
+    {
+      "name": "uncertainty_handling",
+      "value": "Provides definitive recommendations with no explicit discussion of uncertainty.",
+      "justification": "so better to immediately consult doctor and start antibiotics" 
+    },
+    {
+      "name": "reassurance_strategy",
+      "value": "Suggests favorable outcome with prompt and appropriate treatment.",
+      "justification": "with prompt and appropriate treatment, pneumonia can be cured easily"
+    },
+    {
+      "name": "guideline_alignment",
+      "value": "Aligns with standard medical guidance for pneumonia in pregnancy (early antibiotics, hydration).",
+      "justification": "antibiotics as early as possible is the treatment of choice for pneumonia; drink plenty of fluids"
+    }
+  ]
+}

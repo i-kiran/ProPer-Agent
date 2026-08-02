@@ -1,0 +1,99 @@
+
+=== INPUT ===
+- User Persona: Gender: Female, Age: 25-34, Occupation: Other, Price Sensitivity: Medium, Shopping Interest: Watches, Footwear, Snacks, Electronics, Home Organization, Brand Preference: Letdown, visionreast, NABISCO, Jack Link's, Tuitager, Daniel Green, Miss Vickie's, SPACEKEEPER, Goldfish, Amazon Basics, Honey-Can-Do, BigFoot, Nestle Coffee mate, TOZO, Diversity Preference: Medium, Interaction Complexity: Medium, Tone and Style: Concise, Positive, Appreciative, Item Reference: Specific products, Purchase history, Focus Aspect: Average Rating, Number of Ratings, Price
+- Query: Hi there! I really enjoyed these Miss Vickie's chips. Could you help me write a brief, positive review? I'd like to mention the variety and crunch, and maybe compare to my past snack purchases. Thanks!
+- Product: title: Miss Vickie's Kettle Cooked Potato Chip Variety Pack , 1.375 Ounce (Pack of 28), price: 23.99, average_rating: 4.6, categories: ['Grocery & Gourmet Food', 'Snacks & Sweets', 'Snack Foods', 'Chips & Crisps', 'Potato'], store: Miss Vickie's, review: {'rating': 5.0, 'title': 'Love', 'text': 'Love these chips'}
+
+
+=== GPT OUTPUT ===
+{
+  "user_aspects": [
+    {
+      "name": "goal_intent",
+      "value": "Write a brief, positive review of Miss Vickie's chips",
+      "justification": "Query states: 'could you help me write a brief, positive review?' and mentions Miss Vickie's chips; wants to note variety and crunch and compare to past purchases."
+    },
+    {
+      "name": "preference_profile",
+      "value": "Miss Vickie's brand is preferred; snacks are a primary interest; references to specific products",
+      "justification": "Brand Preference includes Miss Vickie's; Shopping Interest lists Snacks; Item Reference: Specific products; Purchase history."
+    },
+    {
+      "name": "need_state",
+      "value": "Positive sentiment about the product; wants to express appreciation in the review",
+      "justification": "User says 'I really enjoyed these Miss Vickie's chips' and seeks a positive review; tone requested is positive/appreciative."
+    },
+    {
+      "name": "constraint_indicator",
+      "value": "Medium price sensitivity",
+      "justification": "Price Sensitivity: Medium"
+    },
+    {
+      "name": "task_structure",
+      "value": "Review-writing task with criteria to mention variety and crunch and a comparison to past purchases",
+      "justification": "Request to mention 'variety and crunch' and 'compare to my past snack purchases'; Item Reference indicates using a specific product for the review."
+    },
+    {
+      "name": "contextual_signal",
+      "value": "Past purchase history and specific-product reference; diverse snack interests present",
+      "justification": "Purchase history; Item Reference: Specific products; Shopping Interest includes Snacks; Brand list includes Miss Vickie's."
+    },
+    {
+      "name": "alignment_expectation",
+      "value": "Produce a concise, positive, appreciative review that references variety and crunch and includes a past-purchases comparison",
+      "justification": "Tone and Style specify Concise, Positive, Appreciative; user explicitly wants variety/crunch and comparison."
+    },
+    {
+      "name": "purchase_intent_strength",
+      "value": "Low / not applicable to this interaction",
+      "justification": "The query is about writing a review, not placing a new purchase; no explicit purchase intent is stated."
+    }
+  ],
+  "solution_aspects": [
+    {
+      "name": "product_features",
+      "value": "Miss Vickie's Kettle Cooked Potato Chip Variety Pack, 1.375 Ounce (Pack of 28)",
+      "justification": "Product title and packaging details extracted from the provided product data."
+    },
+    {
+      "name": "suitability_signal",
+      "value": "High suitability: aligns with Miss Vickie's brand and variety focus; strong user appeal evidenced by 4.6 average rating and positive user review",
+      "justification": "average_rating: 4.6; store: Miss Vickie's; user review example: 'Love these chips' reflects strong positive sentiment."
+    },
+    {
+      "name": "attribute_alignment",
+      "value": "Brand alignment: Miss Vickie's; format: variety pack; chip type: Kettle Cooked",
+      "justification": "Brand matches the user's stated brand preference; product features include 'Kettle Cooked' and 'Variety Pack'."
+    },
+    {
+      "name": "risk_indicator",
+      "value": "No explicit risk indicators provided",
+      "justification": "Data does not include risk flags or warnings for this product."
+    },
+    {
+      "name": "category_semantics",
+      "value": "Grocery & Gourmet Food -> Snacks & Sweets -> Snack Foods -> Chips & Crisps -> Potato",
+      "justification": "Categories field enumerates the semantic path for the product."
+    },
+    {
+      "name": "utility_dimension",
+      "value": "Pack size: 1.375 oz; Count: 28 packs; Product type: Kettle Cooked Potato Chip; Variety Pack",
+      "justification": "Product attributes listed in title and packaging information."
+    },
+    {
+      "name": "price_signal",
+      "value": "23.99",
+      "justification": "Price is explicitly stated in the product data."
+    },
+    {
+      "name": "brand_alignment",
+      "value": "Miss Vickie's",
+      "justification": "Brand name appears in product data; aligns with user brand preferences."
+    },
+    {
+      "name": "recommendation_rationale",
+      "value": "Matches user's interest in Miss Vickie's chips and a variety/crunchy profile; supported by high average rating and positive existing review",
+      "justification": "User expresses enjoyment of Miss Vickie's; product has high rating (4.6) and a positive user review ('Love these chips'); variety pack supports the requested mention of variety."
+    }
+  ]
+}

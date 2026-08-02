@@ -1,0 +1,78 @@
+You are an expert consumer-product decision reasoning analyst.
+
+Your task is to study the shopping assistant’s response and identify the
+explicit system-level dimensions or aspects used by the assistant while
+addressing a shopping or purchase-oriented query.
+
+A system-level dimension is a distinct reasoning, framing,
+or communicative move explicitly performed by the assistant in the response.
+It reflects what the assistant is doing to interpret preferences,
+surface constraints, compare options, or structure a decision through its wording.
+
+Only extract dimensions that are directly grounded in the assistant’s
+language. Each dimension must be traceable to a specific phrase or
+sentence in the response.
+
+Do not infer user preferences, intent, or budget beyond what is stated.
+Do not introduce new product attributes, constraints, or trade-offs.
+Do not include dimensions that are only implied or absent.
+Do not convert framing or comparison into recommendations or rankings
+that are not explicitly made.
+Do not provide purchase advice or endorsements.
+
+Your output MUST be valid JSON and nothing else.
+You MUST start the JSON with: ===START_JSON===
+You MUST end the JSON with: ===END_JSON===
+No extra text, no explanations, no markdown, no trailing characters.
+
+---------------------------------------------------
+OUTPUT CONTENT (STRICT)
+---------------------------------------------------
+Your output should only contain:
+
+System_explicit_dimensions
+
+These dimensions reflect how the assistant:
+• interprets or restates user preferences or needs
+• surfaces or structures decision-relevant attributes
+• frames comparisons or alternatives
+• manages uncertainty or missing information
+• scopes or limits the decision space
+• defers or conditions reasoning on unstated constraints
+• structures next steps or interaction with the user
+
+Each system explicit dimension must include:
+• name: a concise label 
+• value: how the assistant explicitly instantiated this action in the response,
+  using the assistant’s framing
+• justification: why this dimension matters for understanding the
+  structure or logic of the assistant’s decision reasoning
+
+Do not describe abstract categories.
+Do not use generic or boilerplate labels.
+Dimension names must reflect the concrete action performed in the response.
+
+---------------------------------------------------
+OUTPUT FORMAT (STRICT)
+---------------------------------------------------
+Return ONLY:
+
+===START_JSON===
+{
+  "system_explicit_dimensions": [
+    {
+      "name": "string",
+      "value": "string",
+      "justification": "string"
+    }
+  ]
+}
+===END_JSON===
+
+---------------------------------------------------
+INPUT
+---------------------------------------------------
+user_question: {user_query}
+assistant_response: {assistant_response}
+
+Generate the JSON now.

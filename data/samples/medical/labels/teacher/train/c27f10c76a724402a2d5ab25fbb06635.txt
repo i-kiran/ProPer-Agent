@@ -1,0 +1,128 @@
+
+=== INPUT ===
+Utterances: patient: i have a tight and painful chest with a dry cough, no fever and no headaches. could it possibly be coronavirus?
+doctor: possible. top symptoms include fever, dry cough and sob. an obvious possibility. if so, your best step is to self-quarntine. remember at your age low risk of complication and typically will pass without issue. if worsening sob be seen. call your provider or check with local health department. these are healthtap guidelines:https://www.healthtap.com/blog/covid-19-care-guidelines/self-quarantine-guide.
+
+
+=== GPT OUTPUT ===
+{
+  "user_aspects": [
+    {
+      "name": "clinical_goal_intent",
+      "value": "diagnosis check / COVID-19 risk triage",
+      "justification": "from user query: 'could it possibly be coronavirus?'"
+    },
+    {
+      "name": "explicit_symptom",
+      "value": "tight and painful chest; dry cough; no fever; no headaches",
+      "justification": "explicitly stated: 'i have a tight and painful chest with a dry cough, no fever and no headaches'"
+    },
+    {
+      "name": "explicit_history",
+      "value": "absence of fever and headaches",
+      "justification": "explicit history components: 'no fever and no headaches'"
+    },
+    {
+      "name": "latent_symptom_pattern",
+      "value": "cardiorespiratory symptom cluster: chest pain with dry cough, in the absence of fever",
+      "justification": "combination of chest pain and dry cough with no fever suggests a cardiorespiratory symptom pattern"
+    },
+    {
+      "name": "disease_specific_indicator",
+      "value": "cardiac and respiratory system involvement potential",
+      "justification": "chest pain implies cardiac/respiratory involvement; dry cough indicates respiratory process"
+    },
+    {
+      "name": "multisystem_interaction",
+      "value": "involvement of cardiovascular and respiratory domains",
+      "justification": "chest pain (cardiovascular/pleuritic considerations) and cough (respiratory)"
+    },
+    {
+      "name": "risk_indicator",
+      "value": "chest pain as potential red flag; age information missing; doctor notes low risk due to age",
+      "justification": "\"tight and painful chest\" and doctor statement \"at your age low risk of complication\""
+    },
+    {
+      "name": "constraint_indicator",
+      "value": "null",
+      "justification": "no explicit constraint indicators provided in user text"
+    },
+    {
+      "name": "missing_information",
+      "value": "age, exposure history, duration/timeline, comorbidities, vaccination status, vitals",
+      "justification": "not provided in user input"
+    },
+    {
+      "name": "emotional_state",
+      "value": "concern about possible infection (anxiety about COVID-19)",
+      "justification": "query expresses worry: 'could it possibly be coronavirus?'"
+    },
+    {
+      "name": "task_structure",
+      "value": "diagnosis-seeking with safety/triage guidance",
+      "justification": "user asks about diagnosis; doctor's response provides self-quarantine and safety steps"
+    },
+    {
+      "name": "treatment_history_signal",
+      "value": "not provided",
+      "justification": "no prior treatments or medications mentioned"
+    }
+  ],
+  "solution_aspects": [
+    {
+      "name": "medical_reasoning_pattern",
+      "value": "considers COVID-19 as a possible diagnosis; cites common symptom profile; uses guideline-based triage",
+      "justification": "doctor states 'possible. top symptoms include fever, dry cough and sob. an obvious possibility.'"
+    },
+    {
+      "name": "disease_specific_assessment",
+      "value": "COVID-19 suspected with low expected severity given age",
+      "justification": "\"at your age low risk of complication and typically will pass without issue\""
+    },
+    {
+      "name": "explicit_guidance",
+      "value": "self-quarantine; monitor for worsening symptoms; seek care if SOB worsens; contact provider or health department",
+      "justification": "doctor guidance: \"self-quarntine... if worsening sob be seen. call your provider or check with local health department.\""
+    },
+    {
+      "name": "safety_statement",
+      "value": "low risk of complications due to age; warning to seek care if symptoms worsen",
+      "justification": "\"remember at your age low risk of complication and typically will pass without issue. if worsening sob be seen\""
+    },
+    {
+      "name": "diagnostic_hypothesis",
+      "value": "COVID-19 remains a possible diagnosis",
+      "justification": "doctor notes: \"possible... an obvious possibility\""
+    },
+    {
+      "name": "risk_assessment",
+      "value": "low short-term risk of severe disease given age; vigilant for dyspnea",
+      "justification": "\"low risk of complication\" and guidance to monitor for SOB"
+    },
+    {
+      "name": "uncertainty_handling",
+      "value": "acknowledges uncertainty by describing COVID-19 as possible",
+      "justification": "\"possible\" and \"an obvious possibility\""
+    },
+    {
+      "name": "reassurance_strategy",
+      "value": "reassurance regarding mild expected course due to age",
+      "justification": "\"at your age low risk of complication and typically will pass without issue\""
+    },
+    {
+      "name": "information_gap_response",
+      "value": "no explicit request for additional data; provides general/self-quarantine guidance",
+      "justification": "doctor provides guidance without soliciting further details"
+    },
+    {
+      "name": "guideline_alignment",
+      "value": "references HealthTap guidelines and provides a self-quarantine link",
+      "justification": "\"these are healthtap guidelines: https://www.healthtap.com/blog/covid-19-care-guidelines/self-quarantine-guide\""
+    },
+    {
+      "name": "correctness_risk",
+      "value": "balance between caution and reassurance; limited data may affect accuracy of risk stratification",
+      "justification": "the response acknowledges possibility but relies on guidelines and age-based risk"
+    }
+  ]
+}

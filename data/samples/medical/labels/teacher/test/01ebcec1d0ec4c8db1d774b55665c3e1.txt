@@ -1,0 +1,99 @@
+
+=== INPUT ===
+Utterances: patient: i have tested positive for covid 19 what medication must i take?
+doctor: only if hospitalized. covid-19 infection is worldwide, in all but some isolated areas. the goal is to keep people separated so that the clinics and hospitals are not overwhelmed. patients can be presumed positive regardless of whether they got tested or not, as there's no way to test everyone. no good outpatient treatment found yet. trials of various meds are done for hospitalized patients. (mar. 2020)
+
+
+=== GPT OUTPUT ===
+{
+  "user_aspects": [
+    {
+      "name": "clinical_goal_intent",
+      "value": "seeking outpatient COVID-19 medication guidance",
+      "justification": "user asks: 'what medication must i take?'"
+    },
+    {
+      "name": "explicit_symptom",
+      "value": "positive COVID-19 test",
+      "justification": "'i have tested positive for covid 19'"
+    },
+    {
+      "name": "task_structure",
+      "value": "diagnosis/management guidance request",
+      "justification": "the user requests medication to take for a confirmed infection"
+    },
+    {
+      "name": "missing_information",
+      "value": "unknown symptom severity, comorbidities, and vitals",
+      "justification": "null"
+    },
+    {
+      "name": "explicit_history",
+      "value": "COVID-19 infection status",
+      "justification": "'i have tested positive for covid 19'"
+    },
+    {
+      "name": "constraint_indicator",
+      "value": "no stated constraints on care access",
+      "justification": "null"
+    },
+    {
+      "name": "emotional_state",
+      "value": "not stated",
+      "justification": "null"
+    }
+  ],
+  "solution_aspects": [
+    {
+      "name": "explicit_guidance",
+      "value": "treatment only if hospitalized",
+      "justification": "doctor states: 'only if hospitalized'"
+    },
+    {
+      "name": "safety_statement",
+      "value": "public health goal to prevent overwhelming healthcare facilities",
+      "justification": "doctor says: 'the goal is to keep people separated so that the clinics and hospitals are not overwhelmed'"
+    },
+    {
+      "name": "treatment_guidance",
+      "value": "no proven outpatient treatment; focus on hospitalization",
+      "justification": "'no good outpatient treatment found yet. trials of various meds are done for hospitalized patients.'"
+    },
+    {
+      "name": "uncertainty_handling",
+      "value": "acknowledges lack of outpatient therapies",
+      "justification": "'no good outpatient treatment found yet'"
+
+    },
+    {
+      "name": "information_gap_response",
+      "value": "highlights knowledge gap about outpatient options",
+      "justification": "same statement about lack of outpatient treatment"
+    },
+    {
+      "name": "diagnostic_hypothesis",
+      "value": "presumed positive status regardless of test result",
+      "justification": "doctor notes: 'patients can be presumed positive regardless of whether they got tested or not'"
+    },
+    {
+      "name": "disease_specific_assessment",
+      "value": "COVID-19 infection with emphasis on hospitalization for treatment",
+      "justification": "'COVID-19 infection is worldwide... trials of various meds are done for hospitalized patients'"
+    },
+    {
+      "name": "medical_reasoning_pattern",
+      "value": "public health and capacity-focused reasoning",
+      "justification": "the response emphasizes hospital capacity and public health goals"
+    },
+    {
+      "name": "guideline_alignment",
+      "value": "references dated public guidance (mar 2020)",
+      "justification": "the parenthetical citation '(mar. 2020)'"
+    },
+    {
+      "name": "risk_assessment",
+      "value": "concern about overwhelming clinics/hospitals",
+      "justification": "\"the goal is to keep people separated so that the clinics and hospitals are not overwhelmed\""
+    }
+  ]
+}

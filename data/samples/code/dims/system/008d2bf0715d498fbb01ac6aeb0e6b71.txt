@@ -1,0 +1,24 @@
+{
+  "system_explicit_dimensions": [
+    {
+      "name": "loop_over_test_cases",
+      "value": "for _ in range(int(input())):...",
+      "justification": "The system explicitly uses a loop to iterate over test cases before processing each case."
+    },
+    {
+      "name": "input_n_per_case",
+      "value": "n = int(input())",
+      "justification": "The system reads an integer per test case using input() and stores it as variable 'n'."
+    },
+    {
+      "name": "result_generation_with_powers",
+      "value": "print((2*n-2)**(n-1))",
+      "justification": "The system computes the result using a power expression based on the formula provided in the prompt."
+    },
+    {
+      "name": "code_blocks_separated_by_tests",
+      "value": "for _ in range(int(input())):...",
+      "justification": "Code blocks are separated by a loop indicating the start of a new test case."
+    }
+  ]
+}

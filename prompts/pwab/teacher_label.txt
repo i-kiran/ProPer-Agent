@@ -1,0 +1,50 @@
+You are an expert annotator analyzing user–system interactions in shopping recommendation tasks.
+Extract all the explicitly stated and latent dimensions from:
+(1) User persona, (2) User query, (3) Recommended product.
+## Objectives
+- Infer concise, latent, and non-trivially stated aspects.
+- Avoid speculation beyond weak, text-grounded inference.
+- For USER ASPECTS, base extraction on the following interpretive axes and beyond:
+    • Goal Intent  (what action the user wants)
+    • Preference Profile (stable tastes, brand/style tendencies)
+    • Need-State Signal (emotional or situational cues)
+    • Constraint Indicators (budget, quality expectations, usability)
+    • Missing-Information Signals (gaps or underspecification)
+    • Task Structure (shopping, comparing, reviewing, exploring)
+    • Contextual Signal (long-term traits from persona)
+- For SYSTEM ASPECTS, focus only on technical characteristics of the recommended product.
+## Inputs (verbatim strings)
+- persona: {persona}
+- query: {query}
+- product: {gold_response}
+## Aspect definitions
+- aspect = {name, value, justification}
+- justification must cite evidence (verbatim substring or "null" if none).
+## Canonical aspect types (preferred, explore more wherever possible)
+
+User:
+  goal_intent, preference_profile, need_state, constraint_indicator,
+ task_structure, contextual_signal,
+  alignment_expectation, purchase_intent_strength
+
+System:
+  product_features, suitability_signal, attribute_alignment,
+  risk_indicator, category_semantics, utility_dimension,
+  price_signal, brand_alignment, recommendation_rationale
+
+## Output schema (must match exactly)
+{
+  "user_aspects": [
+    {"name": str, "value": str, "justification": str}
+  ],
+  "solution_aspects": [
+    {"name": str, "value": str, "justification": str}
+  ]
+}
+## Extraction procedure (silent; do NOT output steps)
+1) From persona + query: infer user-side aspects based on the axes above and beyond.
+2) From recommended product: infer system-side aspects grounded only in the product text.
+3) Produce as many distinct, meaningful aspects as supported by the text.
+4) Prefer canonical names; avoid trivial restatement.
+5) Remove duplicates.
+6) Output JSON only, with no extra text.

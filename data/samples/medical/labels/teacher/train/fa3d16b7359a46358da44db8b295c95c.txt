@@ -1,0 +1,108 @@
+
+=== INPUT ===
+Utterances: patient: what will happen after the incubation period for covid 19?
+doctor: in brief: symptoms if you are infected, symptoms will emerge: tiredness, dry cough, fever worsening over 5-14 days. you will also become more infective so self-isolation and good hygiene are vital.only be concerned about covid-19 if: - you have been in contact with someone with a conformed diagnosis of covid-19 - you have visited a high risk area - symptoms worsen and include persistent fever and dry cough would you like to video or text chat with me?
+
+
+=== GPT OUTPUT ===
+{
+  "user_aspects": [
+    {
+      "name": "clinical_goal_intent",
+      "value": "prognosis/trajectory after incubation",
+      "justification": "patient asks 'what will happen after the incubation period for covid 19?'."
+    },
+    {
+      "name": "explicit_symptom",
+      "value": "no explicit symptoms reported",
+      "justification": "no symptoms are listed in the user query; the question focuses on progression after incubation."
+    },
+    {
+      "name": "latent_symptom_pattern",
+      "value": "anticipation of post-incubation symptomatic phase (general respiratory illness trajectory)",
+      "justification": "the query mentions incubation period, implying interest in subsequent symptom onset;"
+    },
+    {
+      "name": "disease_specific_indicator",
+      "value": "respiratory illness trajectory after incubation",
+      "justification": "implied by focus on incubation and progression of disease."
+    },
+    {
+      "name": "multisystem_interaction",
+      "value": "not specified",
+      "justification": "no multisystem involvement discussed in the query."
+    },
+    {
+      "name": "risk_indicator",
+      "value": "not explicitly stated in query",
+      "justification": "no exposure or risk factors are mentioned in the user question."
+    },
+    {
+      "name": "constraint_indicator",
+      "value": "not stated",
+      "justification": "no access or treatment constraints described by user."
+    },
+    {
+      "name": "missing_information",
+      "value": "exposure history, vaccination status, comorbidities not provided",
+      "justification": "query does not include these details."
+    },
+    {
+      "name": "emotional_state",
+      "value": "curiosity/implied concern",
+      "justification": "asking about prognosis after incubation suggests concern about disease course."
+    },
+    {
+      "name": "task_structure",
+      "value": "seek prognosis/trajectory information",
+      "justification": "question is framed to understand what happens after incubation."
+    }
+  ],
+  "solution_aspects": [
+    {
+      "name": "medical_reasoning_pattern",
+      "value": "timeline-based progression and transmission risk",
+      "justification": "doctor response outlines symptoms emerging and a 5-14 day window, plus increasing infectivity."
+    },
+    {
+      "name": "disease_specific_assessment",
+      "value": "likely post-incubation symptomatic phase with tiredness, dry cough, fever",
+      "justification": "doctor states: 'symptoms will emerge: tiredness, dry cough, fever worsening over 5-14 days' and 'you will also become more infective'."
+    },
+    {
+      "name": "explicit_guidance",
+      "value": "self-isolation and good hygiene advised; monitor for persistent fever and dry cough; risk factors for concern listed",
+      "justification": "doctor instructs 'self-isolation and good hygiene are vital' and provides criteria for concern: exposure, high-risk area, persistent fever and dry cough."
+    },
+    {
+      "name": "safety_statement",
+      "value": "transmission-reduction measures emphasized",
+      "justification": "advice to self-isolate and maintain hygiene to reduce spread."
+    },
+    {
+      "name": "treatment_guidance",
+      "value": "no specific treatment discussed; focus is on prevention and monitoring",
+      "justification": "response centers on symptoms, timeline, and preventive measures rather than treatments."
+    },
+    {
+      "name": "information_gap_response",
+      "value": "offer of telehealth (video/text chat)",
+      "justification": "doctor asks 'would you like to video or text chat with me?'"
+    },
+    {
+      "name": "guideline_alignment",
+      "value": "aligns with public health guidance on isolation and hygiene",
+      "justification": "recommendation to self-isolate and maintain hygiene reflects standard guidance."
+    },
+    {
+      "name": "risk_assessment",
+      "value": "explicit risk indicators provided: contact with confirmed case, high-risk area, persistent fever with dry cough",
+      "justification": "doctor lists 'you have been in contact with someone with a conformed diagnosis of covid-19', 'visited a high risk area', 'symptoms worsen and include persistent fever and dry cough'."
+    },
+    {
+      "name": "uncertainty_handling",
+      "value": "presented with definite timeline and criteria; no explicit uncertainty discussed",
+      "justification": "response provides concrete timelines (5-14 days) and specific criteria for concern."
+    }
+  ]
+}

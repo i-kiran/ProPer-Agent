@@ -1,0 +1,128 @@
+
+=== INPUT ===
+Utterances: patient: hey there i have had cold "symptoms" for over a week and had a low grade fever last week. for the past two days i have been feeling dizzy. should i contact my dr? should i see a dr
+doctor: yes. protection. it is not enough symptoms to say that you are a suspect case of covid19; but, independently of this, if you have been in contact with a case, or you present persistent cough (with or without sputum), shortness of breath, wheezing, or you have a chronic disease like diabetes, hypertension, low immune system or cancer, should ask for medical attention. and use all the protection measures.
+
+
+=== GPT OUTPUT ===
+{
+  "user_aspects": [
+    {
+      "name": "clinical_goal_intent",
+      "value": "Seek guidance on whether to contact or see a doctor for ongoing symptoms.",
+      "justification": "user asked: 'should i contact my dr? should i see a dr'"
+    },
+    {
+      "name": "explicit_symptom",
+      "value": "Prolonged cold symptoms (>1 week); low-grade fever last week; dizziness for 2 days.",
+      "justification": "statements: 'cold symptoms for over a week', 'low grade fever last week', 'dizzy for the past two days'"
+    },
+    {
+      "name": "explicit_history",
+      "value": "No explicit past medical history provided.",
+      "justification": "the message does not mention chronic diseases or prior conditions"
+    },
+    {
+      "name": "latent_symptom_pattern",
+      "value": "Possible systemic/viral illness with fever and dizziness over a week, with prolonged respiratory symptoms.",
+      "justification": "prolonged duration with fever and dizziness; suggests viral/URI pattern though not explicit"
+    },
+    {
+      "name": "disease_specific_indicator",
+      "value": "Respiratory involvement implied by 'cold symptoms' and fever; dizziness indicates possible vestibular or systemic involvement.",
+      "justification": "references to 'cold symptoms' and 'fever' and 'dizzy'"
+    },
+    {
+      "name": "multisystem_interaction",
+      "value": "No explicit multisystem interaction documented.",
+      "justification": "text does not describe interactions across organ systems"
+    },
+    {
+      "name": "risk_indicator",
+      "value": "No explicit risk factors (no known exposure, no chronic disease stated) in user message.",
+      "justification": "the user message does not mention contact with a case or chronic illness"
+    },
+    {
+      "name": "constraint_indicator",
+      "value": "Questions about accessing care imply potential constraints or uncertainty about doctor's availability.",
+      "justification": "queries 'should i contact my dr? should i see a dr'"
+    },
+    {
+      "name": "missing_information",
+      "value": "Lack of exposure history, vitals, age, cough/SOB/wheeze details, duration of fever, and recent illness trajectory.",
+      "justification": "not provided in user text"
+    },
+    {
+      "name": "emotional_state",
+      "value": "Concern/uncertainty about need for medical evaluation.",
+      "justification": "phrasing indicates wanting guidance on whether to seek care"
+    },
+    {
+      "name": "task_structure",
+      "value": "Requests triage/decision support about seeking medical attention.",
+      "justification": "explicit question about contacting/seeing a doctor"
+    },
+    {
+      "name": "treatment_history_signal",
+      "value": "No prior treatments mentioned.",
+      "justification": "no treatment info provided"
+    }
+  ],
+  "solution_aspects": [
+    {
+      "name": "medical_reasoning_pattern",
+      "value": "The response differentiates between being a COVID-19 suspect and not; uses exposure and symptom criteria to decide when to seek care.",
+      "justification": "it is not enough symptoms to say that you are a suspect case of covid19; but, independently of this, if you have been in contact with a case, or you present persistent cough... should ask for medical attention."
+    },
+    {
+      "name": "disease_specific_assessment",
+      "value": "No specific diagnosis; provides conditional guidance and lists red-flag symptoms for care.",
+      "justification": "not enough symptoms to say that you are a suspect case of covid19; ... should ask for medical attention"
+    },
+    {
+      "name": "explicit_guidance",
+      "value": "Advise to seek medical attention under specified conditions; not when not meeting criteria.",
+      "justification": "should ask for medical attention"
+    },
+    {
+      "name": "treatment_guidance",
+      "value": "Encourages seeking medical care; also advises to use protection measures.",
+      "justification": "should ask for medical attention... use all the protection measures"
+    },
+    {
+      "name": "safety_statement",
+      "value": "Promotes infection protection measures.",
+      "justification": "use all the protection measures"
+    },
+    {
+      "name": "risk_assessment",
+      "value": "Identifies risk factors that would necessitate medical attention: contact with a case, persistent cough, shortness of breath, wheezing, chronic disease (diabetes, hypertension, immunocompromise, cancer).",
+      "justification": "if you have been in contact with a case, or you present persistent cough (with or without sputum), shortness of breath, wheezing, or you have a chronic disease like diabetes, hypertension, low immune system or cancer, should ask for medical attention"
+    },
+    {
+      "name": "uncertainty_handling",
+      "value": "Explicitly notes that symptoms are not sufficient to diagnose COVID-19; presents conditional criteria.",
+      "justification": "it is not enough symptoms to say that you are a suspect case of covid19"
+    },
+    {
+      "name": "reassurance_strategy",
+      "value": "Non-alarming guidance focused on practical precautions and seeking evaluation when criteria met.",
+      "justification": "use all the protection measures"
+    },
+    {
+      "name": "guideline_alignment",
+      "value": "References COVID-19 guidance criteria (suspect case status, exposure).",
+      "justification": "not enough symptoms to say that you are a suspect case of covid19; if you have been in contact with a case"
+    },
+    {
+      "name": "information_gap_response",
+      "value": "Fills gap by outlining when to seek care; does not provide a diagnosis.",
+      "justification": "should ask for medical attention; not enough symptoms to say COVID-19 suspect"
+    },
+    {
+      "name": "correctness_risk",
+      "value": "Triage limited to specified symptoms; dizziness or other red flags are not addressed.",
+      "justification": "the response centers on cough, SOB, wheeze, and chronic disease; no mention of dizziness as a red flag"
+    }
+  ]
+}

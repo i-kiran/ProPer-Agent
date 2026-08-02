@@ -1,0 +1,54 @@
+{
+  "system_explicit_dimensions": [
+    {
+      "name": "problem_scope_to_binary_strings",
+      "value": "The problem involves n binary strings of length m.",
+      "justification": "Explicitly stated as 'Given n binary strings of length m' indicating focus on binary vectors."
+    },
+    {
+      "name": "sorting_in_lexicographic_order",
+      "value": "Sorting the remaining strings in lexicographic order is required.",
+      "justification": "Problem states 'after sorting in lexicographical order'."
+    },
+    {
+      "name": "median_of_remaining",
+      "value": "Computing the median among the remaining strings is the target.",
+      "justification": "Problem asks to compute the median of the remaining strings after sorting."
+    },
+    {
+      "name": "time_complexity_constraints",
+      "value": "Time constraint of O(n log n) from sorting dominates the approach.",
+      "justification": "Stated as 'with time complexity O(n log n) due to sorting'."
+    },
+      {
+      "name": "parameter_bounds",
+      "value": "Domain constraints are provided: 1 <= m <= 60 and 1 <= n <= min(2^m - 1, 100).",
+      "justification": "Specified bounds are given: 1 ≤ m ≤ 60 and 1 ≤ n ≤ min(2^m - 1, 100)"
+    },
+    {
+      "name": "large_n_handling",
+      "value": "The solution needs to support large values of n (up to 1e6).",
+      "justification": "Mentioned that the solution handles edge cases like n = 1 and m = 1 and supports up to 1e6."
+    },
+    {
+      "name": "definition_of_median_index",
+      "value": "Median is defined as the index ⌊(2^m - n - 1)/2⌋.",
+      "justification": "Defined as 'the string whose index is ⌊(2^m - n - 1)/2⌋?'"
+    },
+    {
+      "name": "algorithm_frame",
+      "value": "The implementation uses a Python loop over test cases and performs per-case processing using input parsing.",
+      "justification": "Code snippet shows a loop reading inputs and performing operations."
+    },
+    {
+      "name": "input_parsing",
+      "value": "Inputs consist of two integers m and n, followed by a single string s, then n positions to replace with '-'.",
+      "justification": "Code reads m and n via map, then reads s and iterates n times to read positions."
+    },
+    {
+      "name": "output_format",
+      "value": "Output is a single string resulting from the modified string s after replacing at specified positions.",
+      "justification": "Final line prints'st'"
+    }
+  ]
+}

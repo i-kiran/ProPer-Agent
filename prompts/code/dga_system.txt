@@ -1,0 +1,76 @@
+You are an expert algorithmic reasoning analyst.
+
+Your task is to study the assistant’s response and identify the
+explicit system-level dimensions or aspects used by the assistant while
+addressing the programming or algorithmic query.
+
+A system-level dimension is a distinct reasoning, framing,
+or communicative move explicitly performed by the assistant in the response.
+It reflects what the assistant is doing to structure, contextualize,
+or manage the problem through its wording.
+
+Only extract dimensions that are directly grounded in the assistant’s
+language. Each dimension must be traceable to a specific phrase or
+sentence in the response.
+
+Do not infer missing problem constraints.
+Do not introduce new algorithmic assumptions.
+Do not include dimensions that are only implied or absent.
+Do not convert explanations into unstated optimizations,
+complexity guarantees, or correctness claims.
+Do not provide solutions, algorithms, or recommendations.
+
+Your output MUST be valid JSON and nothing else.
+You MUST start the JSON with: ===START_JSON===
+You MUST end the JSON with: ===END_JSON===
+No extra text, no explanations, no markdown, no trailing characters.
+
+---------------------------------------------------
+OUTPUT CONTENT (STRICT)
+---------------------------------------------------
+Your output should only contain:
+
+System_explicit_dimensions
+
+These dimensions reflect how the assistant:
+• structures or reframes the problem
+• interprets or clarifies the task requirements
+• manages ambiguity or uncertainty in the problem statement
+• scopes or limits the solution space
+• prioritizes aspects of the problem
+• defers or conditions reasoning on missing information
+• structures next steps or interaction with the user
+
+Each system explicit dimension must include:
+• name:concise conceptual or algorithmic label
+• value: how the system explicitly framed or instantiated this dimension
+• justification: why this dimension matters for understanding the system’s reasoning or solution structure
+
+Do not describe abstract categories.
+Do not use generic or boilerplate labels.
+Dimension names must reflect the concrete action performed in the response.
+
+---------------------------------------------------
+OUTPUT FORMAT (STRICT)
+---------------------------------------------------
+Return ONLY:
+
+===START_JSON===
+{
+  "system_explicit_dimensions": [
+    {
+      "name": "string",
+      "value": "string",
+      "justification": "string"
+    }
+  ]
+}
+===END_JSON===
+
+---------------------------------------------------
+INPUT
+---------------------------------------------------
+user_question: {user_query}
+assistant_response: {assistant_response}
+
+Generate the JSON now.

@@ -1,0 +1,128 @@
+
+=== INPUT ===
+Utterances: patient: throat a bit sore and want to get a good imune booster, especially in light of the virus. please advise. have not been in contact with nyone with the virus.
+doctor: during this pandemic. throat pain can be from a strep throat infection (antibiotics needed), a cold or influenza or other virus, or from some other cause such as allergies or irritants. usually, a person sees the doctor (call first) if the sore throat is bothersome, recurrent, or doesn't go away quickly. covid-19 infections tend to have cough, whereas strep throat usually lacks cough but has more throat pain. (3/21/20)
+
+
+=== GPT OUTPUT ===
+{
+  "user_aspects": [
+    {
+      "name": "clinical_goal_intent",
+      "value": "Request guidance on immune boosters and sore throat management",
+      "justification": "throat a bit sore and want to get a good imune booster, especially in light of the virus. please advise."
+    },
+    {
+      "name": "explicit_symptom",
+      "value": "sore throat",
+      "justification": "throat a bit sore"
+    },
+    {
+      "name": "explicit_history",
+      "value": "no known exposure to virus",
+      "justification": "have not been in contact with nyone with the virus."
+    },
+    {
+      "name": "latent_symptom_pattern",
+      "value": "concern about infectious illness with possible bacterial or viral etiologies",
+      "justification": "especially in light of the virus; doctor lists strep, cold/virus, allergies/irritants as causes."
+    },
+    {
+      "name": "disease_specific_indicator",
+      "value": "sore throat with differential etiologies (strep vs viral)",
+      "justification": "throat pain can be from a strep throat infection (antibiotics needed), a cold or influenza or other virus"
+    },
+    {
+      "name": "multisystem_interaction",
+      "value": "none indicated",
+      "justification": "no multisystem involvement mentioned in user text."
+    },
+    {
+      "name": "risk_indicator",
+      "value": "no immediate red flags; uncertain exposure status",
+      "justification": "no evidence of exposure to virus beyond 'not in contact' and no other red flags in user text."
+    },
+    {
+      "name": "constraint_indicator",
+      "value": "no explicit constraints on care access or prior treatments",
+      "justification": "null"
+    },
+    {
+      "name": "missing_information",
+      "value": "duration of sore throat and associated symptoms not provided",
+      "justification": "query contains only 'throat a bit sore'; no duration or additional symptoms."
+    },
+    {
+      "name": "emotional_state",
+      "value": "anxious/concerned about immunity and infection risk",
+      "justification": "want to get a good immune booster, especially in light of the virus."
+    },
+    {
+      "name": "task_structure",
+      "value": "seeking clinical guidance and management recommendations",
+      "justification": "please advise"
+    },
+    {
+      "name": "treatment_history_signal",
+      "value": "no prior treatments mentioned",
+      "justification": "none provided."
+    }
+  ],
+  "solution_aspects": [
+    {
+      "name": "medical_reasoning_pattern",
+      "value": "differential for sore throat includes strep, viral URI, allergies/irritants",
+      "justification": "throat pain can be from a strep throat infection (antibiotics needed), a cold or influenza or other virus, or from some other cause such as allergies or irritants."
+    },
+    {
+      "name": "disease_specific_assessment",
+      "value": "COVID-19 vs strep throat distinctions via cough tendency",
+      "justification": "covid-19 infections tend to have cough, whereas strep throat usually lacks cough but has more throat pain."
+    },
+    {
+      "name": "explicit_guidance",
+      "value": "seek medical care if sore throat is bothersome, recurrent, or not improving; call before visiting",
+      "justification": "usually, a person sees the doctor (call first) if the sore throat is bothersome, recurrent, or doesn't go away quickly."
+    },
+    {
+      "name": "treatment_guidance",
+      "value": "antibiotics considered for strep throat",
+      "justification": "throat pain can be from a strep throat infection (antibiotics needed)"
+    },
+    {
+      "name": "safety_statement",
+      "value": "emphasizes differential diagnosis and triage rather than self-treatment",
+      "justification": "lists multiple etiologies and advises to see a doctor."
+    },
+    {
+      "name": "diagnostic_hypothesis",
+      "value": "strep throat, common cold/influenza/other virus, allergies/irritants",
+      "justification": "throat pain can be from a strep throat infection..., a cold or influenza or other virus, or from some other cause such as allergies or irritants."
+    },
+    {
+      "name": "risk_assessment",
+      "value": "assesses for COVID symptom pattern via cough; no cough more typical of strep",
+      "justification": "covid-19 infections tend to have cough, whereas strep throat usually lacks cough but has more throat pain."
+    },
+    {
+      "name": "uncertainty_handling",
+      "value": "acknowledges multiple etiologies; no single diagnosis asserted",
+      "justification": "lists multiple possible causes."
+    },
+    {
+      "name": "reassurance_strategy",
+      "value": "triage-based guidance rather than definitive treatment plan",
+      "justification": "advice to call the doctor and monitor symptoms; no home remedy or immune booster recommendation."
+    },
+    {
+      "name": "guideline_alignment",
+      "value": "aligns with standard primary-care approach for sore throat evaluation and antibiotic use for strep",
+      "justification": "mentions antibiotics for strep and call-first triage."
+    },
+    {
+      "name": "information_gap_response",
+      "value": "does not provide immune-boosting recommendations; focuses on triage and differential",
+      "justification": "no guidance on immune boosters in the text."
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+
+=== INPUT ===
+Utterances: patient: if one has been in contact with a covid-19 positive person in the last 12-day, but am asymptomatic, what should one do to confirm if the virus has been or not contracted? don’t think it is responsible to wait till symptoms manifest
+doctor: isolate. no symptoms no test. you really do not need testing if there are no symptoms, but act like you are contagious. avoid contact with people for 14 days and only consult your gp if get symptoms.
+
+
+=== GPT OUTPUT ===
+{
+  "user_aspects": [
+    {
+      "name": "clinical_goal_intent",
+      "value": "Determine post-exposure infection status and guidance for asymptomatic testing",
+      "justification": "what should one do to confirm if the virus has been or not contracted?"
+    },
+    {
+      "name": "explicit_symptom",
+      "value": "asymptomatic",
+      "justification": "am asymptomatic"
+    },
+    {
+      "name": "explicit_history",
+      "value": "exposure to a COVID-19 positive person within the last 12 days",
+      "justification": "in the last 12-day"
+    },
+    {
+      "name": "latent_symptom_pattern",
+      "value": "exposed without symptoms; seeking confirmation of infection",
+      "justification": "exposed and asymptomatic; seeking confirmation"
+    },
+    {
+      "name": "disease_specific_indicator",
+      "value": "COVID-19 exposure (SARS-CoV-2)",
+      "justification": "contact with covid-19 positive person"
+    },
+    {
+      "name": "risk_indicator",
+      "value": "recent exposure to a known COVID-19 case",
+      "justification": "exposure to covid-19 positive person"
+    },
+    {
+      "name": "task_structure",
+      "value": "Seek diagnostic/management guidance after exposure",
+      "justification": "what should one do to confirm if the virus has been or not contracted?"
+    },
+    {
+      "name": "emotional_state",
+      "value": "Concerned and proactive about infection status",
+      "justification": "don’t think it is responsible to wait till symptoms manifest"
+    }
+  ],
+  "solution_aspects": [
+    {
+      "name": "explicit_guidance",
+      "value": "Isolate; no symptoms no test; avoid contact with people for 14 days; consult GP only if symptoms",
+      "justification": "isolate. no symptoms no test. you really do not need testing if there are no symptoms, but act like you are contagious. avoid contact with people for 14 days and only consult your gp if get symptoms."
+    },
+    {
+      "name": "safety_statement",
+      "value": "Isolation is recommended to prevent transmission",
+      "justification": "isolate."
+    },
+    {
+      "name": "guideline_alignment",
+      "value": "14-day isolation with no testing in asymptomatic individuals",
+      "justification": "avoid contact for 14 days and no testing if asymptomatic"
+    },
+    {
+      "name": "diagnostic_hypothesis",
+      "value": "No infection confirmation without symptoms; testing not recommended in asymptomatic exposure",
+      "justification": "no symptoms no test"
+    },
+    {
+      "name": "risk_assessment",
+      "value": "Advises acting as if contagious; cautious transmission precautions",
+      "justification": "act like you are contagious"
+    },
+    {
+      "name": "information_gap_response",
+      "value": "No guidance on post-exposure testing, vaccination status, or timing beyond 14-day isolation",
+      "justification": "only consult your gp if get symptoms"
+    },
+    {
+      "name": "uncertainty_handling",
+      "value": "No acknowledgement of uncertainty; prescriptive guidance",
+      "justification": "no discussion of uncertainty"
+    },
+    {
+      "name": "reassurance_strategy",
+      "value": "Directive guidance provides certainty about actions (isolate, 14 days)",
+      "justification": "you really do not need testing if there are no symptoms"
+    }
+  ]
+}

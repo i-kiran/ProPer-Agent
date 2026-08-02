@@ -1,0 +1,12 @@
+torch>=2.3
+transformers>=4.43
+accelerate>=0.33
+peft>=0.12
+sentencepiece
+openai>=1.40
+PyYAML>=6.0
+tqdm>=4.66
+huggingface_hub>=0.24
+
+# Training only -- installs the LLaMA-Factory CLI used by src/train/train.sh.
+# llamafactory[torch,metrics]>=0.9

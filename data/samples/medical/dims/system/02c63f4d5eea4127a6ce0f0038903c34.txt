@@ -1,0 +1,9 @@
+{
+  "system_explicit_dimensions": [
+    {
+      "name": "string",
+      "value": "string",
+      "justification": "string"
+    }
+  ]
+}

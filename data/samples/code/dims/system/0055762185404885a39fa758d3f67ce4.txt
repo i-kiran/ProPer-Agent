@@ -1,0 +1,29 @@
+{
+  "system_explicit_dimensions": [
+    {
+      "name": "problem_definition_rephrasing",
+      "value": "\"Calculate the number of times the bonus will be paid out for a given number of game sales n\"",
+      "justification": "The first sentence explicitly rephrases the problem as counting when sales are divisible by all numbers from 2 to 10."
+    },
+    {
+      "name": "edge_case_handling",
+      "value": "n == 1 returns 0",
+      "justification": "Explicit base-case handling via if n == 1: return 0; otherwise uses recursion with smaller values."
+    },
+    {
+      "name": "divisibility_by_2_to_10",
+      "value": "if n % i == 0 for i in [2, 3,..., 10]",
+      "justification": "The code checks divisibility by each number from 2 to 10 using the modulo operator and returns n // 10 if true."
+    },
+    {
+      "name": "recursive_division_with_reduction",
+      "value": "else: recursive calls for n-1, n-2,... n-10",
+      "justification": "When not divisible by all, the function performs recursive calls with reduced values to simulate division-like behavior."
+    },
+    {
+      "name": "input_format",
+      "value": "reads input with int(input())",
+      "justification": "The provided print statement reads user input as an integer before calling bonus_payments()."
+    }
+  ]
+}

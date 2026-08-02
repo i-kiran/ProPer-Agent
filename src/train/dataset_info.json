@@ -1,0 +1,26 @@
+{
+  "rga_code": {
+    "file_name": "code/raw/code_rga_train.jsonl",
+    "columns": { "prompt": "instruction", "query": "input", "response": "output" }
+  },
+  "rga_medical": {
+    "file_name": "medical/raw/medical_rga_train.jsonl",
+    "columns": { "prompt": "instruction", "query": "input", "response": "output" }
+  },
+  "rga_pwab": {
+    "file_name": "pwab/raw/pwab_rga_train.jsonl",
+    "columns": { "prompt": "instruction", "query": "input", "response": "output" }
+  },
+  "dga_code": {
+    "file_name": "code/raw/code_dga_train.jsonl",
+    "columns": { "prompt": "instruction", "query": "input", "response": "output" }
+  },
+  "dga_medical": {
+    "file_name": "medical/raw/medical_dga_train.jsonl",
+    "columns": { "prompt": "instruction", "query": "input", "response": "output" }
+  },
+  "dga_pwab": {
+    "file_name": "pwab/raw/pwab_dga_train.jsonl",
+    "columns": { "prompt": "instruction", "query": "input", "response": "output" }
+  }
+}

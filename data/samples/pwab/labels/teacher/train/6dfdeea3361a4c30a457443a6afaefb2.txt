@@ -1,0 +1,99 @@
+
+=== INPUT ===
+- User Persona: Gender: Female, Age: 35-44, Occupation: Writer, Price Sensitivity: Medium, Shopping Interest: Electronics, Home & Kitchen, Fashion, Health & Beauty, Brand Preference: Aibocn, DACHEE, IBENZER, Columbia, Nutrition Essentials, Stauffers, KitchenAid, Fossil, ILIFE, simplehuman, Utopia Bedding, HC COLLECTION, Linenspa, CINEYO, DearMy, Basic Brands, Roku, Anne Klein, Hanes, ZESICA, Madison Park, Diversity Preference: High, Interaction Complexity: High, Tone and Style: Enthusiastic, Detailed, Positive, Item Reference: Specific products and brands mentioned frequently, Focus Aspect: Quality, Brand, Price
+- Query: Hey there! I'm on the hunt for some comfy yet stylish leggings that look like jeans. Hoping to find a quality brand with great stretch and a reasonable price. Any recommendations for denim-style leggings that are perfect for everyday wear?
+- Product: title: No nonsense Women's Stretch Denim Legging, price: 17.77, average_rating: 4.2, categories: ['Clothing, Shoes & Jewelry', 'Women', 'Clothing', 'Leggings'], store: No Nonsense, review: {'rating': 5.0, 'title': "The bEST leggings  Ever !'n", 'text': 'Perfect fit and so soft & not to heavy but heavy to perfection.  Wide elastic waistband and they move with U but Never sags.  I have purchased<br />4 paid and my sister loved them so 5 more for her.  Well Made !'}
+
+
+=== GPT OUTPUT ===
+{
+  "user_aspects": [
+    {
+      "name": "goal_intent",
+      "value": "Find denim-style leggings that are comfy, stylish, suitable for everyday wear",
+      "justification": "Query expresses a hunt for 'comfy yet stylish leggings that look like jeans' and asks for 'denim-style leggings that are perfect for everyday wear'."
+    },
+    {
+      "name": "preference_profile",
+      "value": "Brand-conscious with a long list of preferred brands; seeks quality with attention to price, brand, and overall quality across categories",
+      "justification": "Brand Preference: Aibocn, DACHEE, IBENZER, Columbia, Nutrition Essentials, Stauffers, KitchenAid, Fossil, ILIFE, simplehuman, Utopia Bedding, HC COLLECTION, Linenspa, CINEYO, DearMy, Basic Brands, Roku, Anne Klein, Hanes, ZESICA, Madison Park, Diversity Preference: High, Focus Aspect: Quality, Brand, Price."
+    },
+    {
+      "name": "need_state",
+      "value": "Hopeful and value-oriented; seeks reliable quality with stretch at a fair price",
+      "justification": "Hoping to find a quality brand with great stretch and a reasonable price."
+    },
+    {
+      "name": "constraint_indicator",
+      "value": "Moderate price sensitivity; prefers leggings at a reasonable price",
+      "justification": "Price Sensitivity: Medium; requests a 'reasonable price'."
+    },
+    {
+      "name": "task_structure",
+      "value": "Exploratory shopping for denim-style leggings; asking for recommendations",
+      "justification": "Hunt for recommendations for denim-style leggings; 'Any recommendations for denim-style leggings'."
+    },
+    {
+      "name": "contextual_signal",
+      "value": "Diverse brand interests; high interaction complexity; communication style is enthusiastic, detailed, and positive; prioritizes quality, brand, and price",
+      "justification": "Diversity Preference: High; Interaction Complexity: High; Tone and Style: Enthusiastic, Detailed, Positive; Focus Aspect: Quality, Brand, Price."
+    },
+    {
+      "name": "alignment_expectation",
+      "value": "Expect a quality product with good stretch at a reasonable price; denim-look and everyday wear suitability",
+      "justification": "Quality with great stretch and a reasonable price; denim-style look for everyday wear."
+    },
+    {
+      "name": "purchase_intent_strength",
+      "value": "Moderate purchase consideration; open to recommendations that fit criteria",
+      "justification": "On the hunt for some comfy yet stylish leggings; Any recommendations implies exploratory purchase consideration."
+    }
+  ],
+  "solution_aspects": [
+    {
+      "name": "product_features",
+      "value": "No Nonsense Women's Stretch Denim Legging featuring stretch denim fabric and a wide elastic waistband; denim-style appearance; price 17.77; rating 4.2; soft, moves with you, and resists sagging",
+      "justification": "Product title and description: 'No nonsense Women's Stretch Denim Legging'; price: 17.77; review notes: 'The bEST leggings Ever... Wide elastic waistband and they move with U but Never sags'"
+    },
+    {
+      "name": "suitability_signal",
+      "value": "Designed for everyday wear with a denim-look and good stretch at an affordable price; positive user feedback supports comfort and fit",
+      "justification": "Query targets everyday wear; product is denim-style leggings; price is budget-friendly; review highlights comfort and fit."
+    },
+    {
+      "name": "attribute_alignment",
+      "value": "Brand alignment is low with the user's preferred brands (No Nonsense not listed in userBrand preferences); fits the denim-look and price expectations, though",
+      "justification": "Brand Alignment: No Nonsense is not in the user's listed brand preferences; price aligns with 'reasonable price'."
+    },
+    {
+      "name": "risk_indicator",
+      "value": "Low risk due to positive rating (4.2) and highly favorable anecdotal review describing fit and comfort",
+      "justification": "Average rating: 4.2; user review: 'Perfect fit and so soft & not heavy... Wide elastic waistband'."
+    },
+    {
+      "name": "category_semantics",
+      "value": "Categories: Clothing, Shoes & Jewelry > Women > Clothing > Leggings; product title emphasizes 'Stretch Denim Legging'",
+      "justification": "Categories listed: ['Clothing, Shoes & Jewelry', 'Women', 'Clothing', 'Leggings']; title includes 'Stretch Denim Legging'."
+    },
+    {
+      "name": "utility_dimension",
+      "value": "Primary utilities: comfort (soft, moves with you), stretch (denim with give), waistband support (wide elastic), everyday wear versatility",
+      "justification": "Review mentions 'soft & not heavy', 'Wide elastic waistband', 'they move with U but Never sags'; fits everyday wear needs."
+    },
+    {
+      "name": "price_signal",
+      "value": "Price 17.77 USD; positioned as budget-friendly value for denim-style leggings",
+      "justification": "Product price stated: 17.77."
+    },
+    {
+      "name": "brand_alignment",
+      "value": "No Nonsense brand; not within the user's listed preferred brands",
+      "justification": "Brand list does not include No Nonsense; identified as brand in product description."
+    },
+    {
+      "name": "recommendation_rationale",
+      "value": "Denim-look leggings with stretch and comfortable waistband offered at a budget price; supported by positive rating and review; aligns with user's denim-style and price needs",
+      "justification": "User seeks denim-style leggings with good stretch at a reasonable price; product offers stretch denim with wide waistband; positive review supports quality and fit."
+    }
+  ]
+}

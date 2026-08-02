@@ -1,0 +1,44 @@
+{
+  "system_explicit_dimensions": [
+    {
+      "name": "Quarantine Contextualization",
+      "value": "if you are exposed to someone who is sick with covid-19, even if you are asymptomatic, you can still spread it to others.",
+      "justification": "The doctor highlights the importance of quarantine as a precautionary measure despite being asymptomatic."
+    },
+    {
+      "name": "Risk Management",
+      "value": "quarantine yourself until you get the results of your test.",
+      "justification": "The doctor advises quarantine as a way to mitigate the risk of spreading the disease to others."
+    },
+    {
+      "name": "Diagnostic Orientation",
+      "value": "get tested.",
+      "justification": "The doctor emphasizes the need for diagnostic confirmation via a COVID-19 test."
+    },
+    {
+      "name": "Public Health Framing",
+      "value": "follow all public health guidelines for isolation.",
+      "justification": "The doctor references public health guidelines for infection control and prevention during isolation."
+    },
+    {
+      "name": "Pragmatic Advice",
+      "value": "stay home, self-isolate.",
+      "justification": "The doctor provides practical guidance on taking immediate action to reduce transmission risks."
+    },
+    {
+      "name": "Test Interpretation Guidance",
+      "value": "if your test is negative then you did not contract it from this person.",
+      "justification": "The doctor clarifies the implications of a negative test result."
+    },
+    {
+      "name": "Reassurance through Expertise",
+      "value": "(and yes, i'm sure you would have already done that). there are many tests available for covid-19. they are all highly accurate.",
+      "justification": "The doctor seeks to reassure the patient about the availability and accuracy of COVID-19 tests."
+    },
+    {
+      "name": "Future-oriented Planning",
+      "value": "if your test comes back positive, follow all public health guidelines for isolation. if you were tested by a healthcare provider, he may also recommend testing again after 5 days, because sometimes it takes time to develop symptoms.",
+      "justification": "The doctor prepares the patient for potential future actions based on test results."
+    }
+  ]
+}

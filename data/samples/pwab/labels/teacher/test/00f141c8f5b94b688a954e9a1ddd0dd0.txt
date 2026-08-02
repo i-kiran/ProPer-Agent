@@ -1,0 +1,99 @@
+
+=== INPUT ===
+- User Persona: Gender: Male, Age: 35-44, Occupation: Other, Price Sensitivity: Medium, Shopping Interest: Home & Garden, Clothing, Footwear, Food & Beverages, Brand Preference: Merry Garden, Lee, Dockers, Rocky, MAYTEX, Usas, Wrangler, Panacea, Best Nest Wellness, Bee Raw, Luzianne, Smith & Wesson, Nexcare, Knorr, LotFancy, Nestlé Crunch, Diversity Preference: Medium, Interaction Complexity: Medium, Tone and Style: Positive, detailed, practical, Item Reference: Specific products, purchase history, recommendations, Focus Aspect: Average Rating, Brand, Price
+- Query: Hey there! I'm looking for some tasty chocolate treats. Any suggestions for quality brands with good ratings and reasonable prices? Open to both white and milk chocolate options.
+- Product: title: Nestlé Crunch White Chocolate bar - 100gr / 3.5oz [Pack of 7 bars], price: 24.8, average_rating: 4.4, categories: [], store: Nestlé Crunch, review: {'rating': 5.0, 'title': 'Great taste from white chocolate with crunchies!', 'text': 'Well, worth the wait!'}
+
+
+=== GPT OUTPUT ===
+{
+  "user_aspects": [
+    {
+      "name": "goal_intent",
+      "value": "Discover chocolate treats from quality brands with good ratings at reasonable prices (open to white and milk chocolate).",
+      "justification": "Query states: 'quality brands with good ratings and reasonable prices' and 'Open to both white and milk chocolate options.'"
+    },
+    {
+      "name": "preference_profile",
+      "value": "Broad brand preferences including Nestlé Crunch among a long list of brands; diverse category interests.",
+      "justification": "Persona lists: \"Brand Preference: Merry Garden, Lee, Dockers, Rocky, MAYTEX, Usas, Wrangler, Panacea, Best Nest Wellness, Bee Raw, Luzianne, Smith & Wesson, Nexcare, Knorr, LotFancy, Nestlé Crunch, Diversity Preference: Medium.\""
+    },
+    {
+      "name": "need_state",
+      "value": "Value-conscious, pragmatic shopper seeking well-rated options with reasonable price.",
+      "justification": "Persona indicates focus on rating/price; query emphasizes ratings and affordability."
+    },
+    {
+      "name": "constraint_indicator",
+      "value": "Price sensitivity: Medium; budget considerations are present but not strict.",
+      "justification": "Persona: \"Price Sensitivity: Medium.\""
+    },
+    {
+      "name": "task_structure",
+      "value": "Exploring chocolate options and comparing by rating and price to identify suitable picks.",
+      "justification": "Query asks for suggestions based on ratings and price; openness to options implies exploration."
+    },
+    {
+      "name": "contextual_signal",
+      "value": "Context includes interest in specific products and past recommendations; broad brand familiarity across categories.",
+      "justification": "Item Reference: \"Specific products, purchase history, recommendations\" and broad brand list in persona."
+    },
+    {
+      "name": "alignment_expectation",
+      "value": "Expect alignment on average rating, brand familiarity, and price; prefers brands in their list.",
+      "justification": "Focus Aspect: Average Rating, Brand, Price; brand preferences include Nestlé Crunch."
+    },
+    {
+      "name": "purchase_intent_strength",
+      "value": "Moderate purchase intent contingent on finding well-rated product at a reasonable price.",
+      "justification": "Query seeks quality brands and reasonable prices; implies potential purchase if criteria are met."
+    }
+  ],
+  "solution_aspects": [
+    {
+      "name": "product_features",
+      "value": "Nestlé Crunch White Chocolate bar - 100gr / 3.5oz [Pack of 7 bars]",
+      "justification": "Product title explicitly lists: \"Nestlé Crunch White Chocolate bar - 100gr / 3.5oz [Pack of 7 bars]\""
+    },
+    {
+      "name": "suitability_signal",
+      "value": "average_rating: 4.4",
+      "justification": "Product data includes \"average_rating: 4.4\""
+    },
+    {
+      "name": "attribute_alignment",
+      "value": "brand: Nestlé Crunch; flavor: white chocolate; form: bar; pack_size: 7 bars; weight_per_bar: 100g",
+      "justification": "Product title indicates white chocolate bar, pack of 7 bars; 100gr / 3.5oz per bar."
+    },
+    {
+      "name": "risk_indicator",
+      "value": "null",
+      "justification": "No explicit risk indicators present in the product text."
+    },
+    {
+      "name": "category_semantics",
+      "value": "Chocolate bar / Snack; flavor: white chocolate",
+      "justification": "Product is a white chocolate bar; descriptor implies a snack category."
+    },
+    {
+      "name": "utility_dimension",
+      "value": "price: 24.8; pack_size: 7 bars; rating: 4.4; flavor: white chocolate with crunchies",
+      "justification": "Price and rating data are provided; title mentions white chocolate with crunchies."
+    },
+    {
+      "name": "price_signal",
+      "value": "24.8",
+      "justification": "Explicit price: 24.8"
+    },
+    {
+      "name": "brand_alignment",
+      "value": "Nestlé Crunch aligns with user brand preferences (Nestlé Crunch listed in Brand Preference).",
+      "justification": "User persona includes \"Nestlé Crunch\" in Brand Preference."
+    },
+    {
+      "name": "recommendation_rationale",
+      "value": "White chocolate option with crunchies; solid rating (4.4); pack of 7 bars; brand appears in user’s preferred list; price within moderate range.",
+      "justification": "Covers product features (white chocolate with crunchies), rating (4.4), pack size (7 bars), brand (Nestlé Crunch) presence in user preferences, and price context."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "system_explicit_dimensions": [
+    {
+      "name": "product_title",
+      "value": "Lindt Excellence Milk Chocolate Bar 4 oz",
+      "justification": "The assistant highlights the product title, emphasizing the brand and type of chocolate."
+    },
+    {
+      "name": "price_disclosure",
+      "value": "12.99",
+      "justification": "The assistant explicitly mentions the price of the product."
+    },
+    {
+      "name": "average_rating_display",
+      "value": "4.8",
+      "justification": "The assistant includes the average rating of the product to convey overall customer satisfaction."
+    },
+    {
+      "name": "category_classification",
+      "value": "'Grocery & Gourmet Food', 'Baking', 'Chocolate & Cocoa', 'Candy Bars'",
+      "justification": "The assistant lists multiple categories under which the product can be found."
+    },
+    {
+      "name": "brand_name",
+      "value": "Lindt",
+      "justification": "The assistant identifies the brand name as Lindt."
+    },
+    {
+      "name": "positive_review_quote",
+      "value": "\"I love these bars. They are rich and creamy. My wife loves them too.\"",
+      "justification": "The assistant provides a quote from a positive review to support the product's quality and appeal."
+    }
+  ]
+}

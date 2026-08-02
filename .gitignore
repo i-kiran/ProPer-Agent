@@ -1,0 +1,15 @@
+# The full dataset lives on the Hugging Face Hub; `bash data/download.sh` puts
+# it here. Only data/samples/ is tracked in git.
+data/release/
+
+# Checkpoints (LoRA adapters), downloaded or trained.
+saves/
+
+# Pipeline artefacts.
+outputs/
+**/outputs/*.pkl
+
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv/

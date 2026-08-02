@@ -1,0 +1,24 @@
+{
+  "system_explicit_dimensions": [
+    {
+      "name": "Brand-mention-1",
+      "value": "BAOZI",
+      "justification": "The assistant explicitly mentions the brand 'BAOZI' from the product description."
+    },
+    {
+      "name": "Rating-1",
+      "value": "4.6",
+      "justification": "The assistant includes the average rating '4.6' extracted from the product data."
+    },
+    {
+      "name": "Category-1",
+      "value": "'Home & Kitchen', 'Bedding', 'Bedding Sets'",
+      "justification": "The assistant extracts and lists categories ('Home & Kitchen', 'Bedding', 'Bedding Sets') from the product data."
+    },
+    {
+      "name": "Review-1",
+      "value": "'The price was great but quality is lacking., Price was good and color was as expected but material feels cheap.'",
+      "justification": "The assistant reports a negative review with mixed comments about price and quality."
+    }
+  ]
+}

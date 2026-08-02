@@ -1,0 +1,119 @@
+
+=== INPUT ===
+- User Persona: Gender: Female, Age: 56+, Occupation: Retired, Price Sensitivity: Low, Shopping Interest: Electronics, Kitchen Appliances, Home Goods, Personal Care, Brand Preference: Coby, Oster, Logitech, Apple, O2COOL, Lasko, Norpro, ZOKU, Crisco, The Natural Dentist, Campbell's, Hamilton Beach, Bodum, Holstein Housewares, Champion, Artizen, Hawkins, Gourmia, AmorArc, Nostalgia, Kitchen Selectives, Lamicall, Diversity Preference: Medium, Interaction Complexity: Medium, Tone and Style: Positive, Enthusiastic, Detailed, Item Reference: Specific products and brands mentioned in reviews, Focus Aspect: Average Rating, Brand, Quality
+- Query: I'm looking for versatile, high-quality home accessories that make life easier. Any recommendations for adjustable tables or similar convenient items?
+- Product: title: Table Mate II TV Tray Table - Folding TV Dinner Table, Couch Table Trays for Eating Snack Food, Stowaway Laptop Stand, Portable Bed Dinner Tray - Adjustable TV Table with 3 Angles, Cup Holder, White, price: 53.18, average_rating: 4.2, categories: ['Home & Kitchen', 'Furniture', 'Game & Recreation Room Furniture', 'TV Trays'], store: Table-Mate, review: {'rating': 5.0, 'title': 'Easy to move around', 'text': 'Reading IPad, eating meals. This is great!'}
+
+
+=== GPT OUTPUT ===
+{
+  "user_aspects": [
+    {
+      "name": "goal_intent",
+      "value": "Seek versatile, high-quality home accessories; specifically adjustable tables or similar convenient items.",
+      "justification": "Query states: 'I'm looking for versatile, high-quality home accessories that make life easier. Any recommendations for adjustable tables or similar convenient items?'"
+    },
+    {
+      "name": "preference_profile",
+      "value": "Brand-conscious with a broad brand inclinations and interest in quality; follows multiple brands (e.g., Coby, Oster, Logitech, Apple, etc.).",
+      "justification": "Brand Preference list includes: 'Coby, Oster, Logitech, Apple, O2COOL, Lasko, Norpro, ZOKU, Crisco, The Natural Dentist, Campbell's, Hamilton Beach, Bodum, Holstein Housewares, Champion, Artizen, Hawkins, Gourmia, AmorArc, Nostalgia, Kitchen Selectives, Lamicall' and Focus Aspect mentions Brand, Quality."
+    },
+    {
+      "name": "need_state",
+      "value": "Desire for ease and convenience in daily life; seeks features that simplify tasks.",
+      "justification": "Query: 'versatile, high-quality home accessories that make life easier' and interest in adjustable tables."
+    },
+    {
+      "name": "constraint_indicator",
+      "value": "Low price sensitivity; budget constraints are not primary.",
+      "justification": "Persona lists 'Price Sensitivity: Low'."
+    },
+    {
+      "name": "task_structure",
+      "value": "Shopping/exploring for recommendations; evaluating potential products.",
+      "justification": "Query seeks 'recommendations' for adjustable tables or similar items."
+    },
+    {
+      "name": "diversity_preference",
+      "value": "Medium",
+      "justification": "Diversity Preference: Medium."
+    },
+    {
+      "name": "interaction_complexity",
+      "value": "Medium",
+      "justification": "Interaction Complexity: Medium."
+    },
+    {
+      "name": "tone_style",
+      "value": "Positive, enthusiastic, detailed",
+      "justification": "Tone and Style: Positive, Enthusiastic, Detailed."
+    },
+    {
+      "name": "item_reference",
+      "value": "Values references to specific products/brands mentioned in reviews.",
+      "justification": "Item Reference: Specific products and brands mentioned in reviews."
+    },
+    {
+      "name": "alignment_expectation",
+      "value": "Prefers alignment with average rating, brand signals, and perceived quality.",
+      "justification": "Focus Aspect: Average Rating, Brand, Quality."
+    },
+    {
+      "name": "purchase_intent_strength",
+      "value": "Exploratory to moderate; not explicitly stated as ready to purchase.",
+      "justification": "Query asks for recommendations rather than a confirmed purchase intent."
+    },
+    {
+      "name": "contextual_signal",
+      "value": "Long-term interest in brands and reviews; values brand/quality signals.",
+      "justification": "Item Reference and Brand/Quality focus indicate ongoing interest in brand-oriented quality signals."
+    }
+  ],
+  "solution_aspects": [
+    {
+      "name": "product_features",
+      "value": "Table Mate II TV Tray Table: adjustable with 3 angles; folding; cup holder; portable; serves as couch/bed tray and laptop stand; color: White; price: 53.18; store: Table-Mate.",
+      "justification": "Product description: 'Table Mate II TV Tray Table - Folding TV Dinner Table, Couch Table Trays for Eating Snack Food, Stowaway Laptop Stand, Portable Bed Dinner Tray - Adjustable TV Table with 3 Angles, Cup Holder, White, price: 53.18'."
+    },
+    {
+      "name": "suitability_signal",
+      "value": "High suitability for user request: adjustable, versatile table suitable for couch/bed use and laptop/work.",
+      "justification": "Product features include 'Adjustable TV Table with 3 Angles' and 'Couch Table Trays' which map to the ask for adjustable, versatile home accessories."
+    },
+    {
+      "name": "attribute_alignment",
+      "value": "Aligns with request for adjustable, multi-use table; includes cup holder and portability.",
+      "justification": "Attributes listed: 'Adjustable TV Table with 3 Angles', 'Cup Holder', 'Folding', 'Portable', matching the versatile, convenient use case."
+    },
+    {
+      "name": "risk_indicator",
+      "value": "Low risk based on user-visible rating range and a positive review.",
+      "justification": "Average rating 4.2 and a 5.0 review; review excerpt 'Easy to move around' supports ease of use."
+    },
+    {
+      "name": "category_semantics",
+      "value": "Category: Home & Kitchen > Furniture > TV Trays; subcategory: TV Trays; likely used as a sofa/bed table.",
+      "justification": "Categories include 'Home & Kitchen', 'Furniture', 'Game & Recreation Room Furniture', 'TV Trays'."
+    },
+    {
+      "name": "utility_dimension",
+      "value": "Convenience, portability, adjustability, multi-use (tray, laptop stand, dinner table).",
+      "justification": "Features described imply multiple utilities: 'TV Tray Table', 'Stowaway Laptop Stand', 'Portable Bed Dinner Tray', '3 Angles'."
+    },
+    {
+      "name": "price_signal",
+      "value": "Budget-friendly at 53.18; supports low-cost, easily purchasable solution.",
+      "justification": "Price: 53.18."
+    },
+    {
+      "name": "brand_alignment",
+      "value": "Low alignment with persona's listed brands (Table-Mate not in Brand Preference).",
+      "justification": "Brand Alignment: Table-Mate is not listed in the user's Brand Preference; inferred low alignment."
+    },
+    {
+      "name": "recommendation_rationale",
+      "value": "Matches user's request for a versatile, adjustable table that enhances convenience for eating, lounging, or laptop use; features support easy integration into daily life.",
+      "justification": "Product features include adjustable angles and multiple use cases (dining, laptop, couch/bed), aligning with the query for convenient, adjustable home accessories."
+    }
+  ]
+}
