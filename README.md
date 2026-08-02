@@ -185,6 +185,10 @@ No keys are stored in this repository. `OPENAI_API_KEY` is read from the
 environment and `OPENAI_BASE_URL` selects the endpoint, so any
 OpenAI-compatible provider works. Only the teacher and judge stages need it.
 
+## License
+
+MIT — see [LICENSE](LICENSE).
+
 ## Citation
 
 If you use this code or data, please cite:
